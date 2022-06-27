@@ -1,0 +1,42 @@
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src: url(../fonts/MaterialIcons-Regular.eot);src: local('Material Icons'),local('MaterialIcons-Regular'),url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),url(../fonts/MaterialIcons-Regular.woff) format('woff'),url(../fonts/MaterialIcons-Regular.ttf) format('truetype'),url('../fonts/MaterialIcons-Regular.svg#MaterialIcons-Regular') format('svg')}
+@font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}
+[class*='fa-']:before,[class*='AAIco-']:before{display:inline-block;font-style:normal!important;font-weight:normal!important;font-size:inherit;line-height:inherit;vertical-align:top;letter-spacing:normal;text-transform:none;white-space:nowrap;word-wrap:normal}
+[class*='fa-']:before{font-family:FontAwesome}
+[class*='AAIco-']:before{font-family:'Material Icons';font-feature-settings:'liga'}
+.additional-menu-field-tricon{position: relative;}
+.tr-icons-menu>p>button{border: 0;background-color: #2979ff;margin-right: 5px;margin-bottom: 5px;border-radius: 3px;color: #fff;font-weight: 700;text-transform: uppercase;font-size: 10px;padding: 5px 10px;cursor: pointer;opacity: .5;}
+.tr-icons-menu>p>button:hover{transform: scale(1.1)}
+.tr-icons-menu>p>button.triconscurrent{opacity: 1;}
+.tr-icons-menu>p>button+button{background-color: #1e9e74;}
+.tr-icons-menu>ul{font-size: 0;padding: .5rem;background-color: #fff;border-radius: 4px;box-shadow: 0 0 20px rgba(0,0,0,.2);width: auto;max-height: 20rem;overflow: auto;}
+.tr-icons-menu>ul::-webkit-scrollbar{width:10px;height:10px;background-color: #eee;}
+.tr-icons-menu>ul::-webkit-scrollbar-thumb{background-color: #666;}
+.tr-icons-menu>ul>li{display: inline-block;vertical-align: top;width: 2.8rem;height: 2.5rem;line-height: 2.5rem;text-align: center;padding: .5rem;color: #000;opacity: .5;transition: .2s;}
+.tr-icons-menu>ul>li:hover{opacity: 1;box-shadow: 0 0 15px rgba(0,0,0,.2),inset 0 0 15px rgba(0,0,0,.1);transform: scale(1.2);cursor: pointer;}
+.tr-icons-menu>ul>li:before{font-size: 1.5rem;}
+.tr-icons-menu>ul>li[class*='fa-']:hover:before{color: #1e9e74;}
+.tr-icons-menu>ul>li[class*='AAIco-']:hover:before{color: #2979ff;}
+.tr-icons-menu>ul>li.trnoresults,.tr-icons-menu>ul>li.trloading{width: auto;display: block;height: auto;font-size: .875rem;pointer-events: none;transform: scale(1);box-shadow: none;}
+#tr-optimization form{margin-bottom:40px;}
+.tbopt,.tbopt input[type="text"]{width: 100%;margin: 0;}
+.tbopt{box-shadow: 0 0 20px rgba(0,0,0,.1);border-collapse: collapse;}
+.tbopt th,.tbopt td{text-align: center;padding: 15px;background-color: #fff;}
+.tbopt th:first-child,.tbopt td:first-child{text-align: left;}
+.tblnks a{text-decoration: none;margin: 5px;display: inline-block;vertical-align: top;}
+.tr-icons-menu,.additional-menu-field-trsubmenu{clear: both;margin-right: 10px;}
+.dvrmngr-list>li{background-color: #fff;border-radius: 4px;box-shadow: 0 0 20px rgba(0,0,0,.2);padding: 1rem;margin-bottom: 1rem;}
+.dvrmngr-list>li>p{margin-top: 0;font-weight: 700;}
+.dvrmngr-list>li textarea{width: 100%;min-height: 90px;max-height: 250px;resize: vertical}
+span.trads_type{display: block;margin-bottom: .5rem;}
+.tr-menu-opts{clear: both;}
+.widgets-php .sidebars-column-1 .inner .custom-sidebars-checkup{display:none !important}
+tr:first-child .optimization_up,tr:last-child .optimization_down{display: none;}
+form#form_tr_optimization_active,form#form_tr_optimization_active label,form#form_tr_optimization_active span{display: inline-block;vertical-align: top;}
+form#form_tr_optimization_active{margin-bottom: 5px;padding-top: 5px;}
+form#form_tr_optimization_active label{position: relative;cursor: pointer;}
+form#form_tr_optimization_active label input{position: absolute;opacity: 0;}
+form#form_tr_optimization_active label span{width: 3rem;height: 1.5rem;border-radius: 2rem;box-shadow: inset 0 0 20px rgba(0,0,0,.1);background-color: #ccc;}
+form#form_tr_optimization_active label span:before{width: 1.3rem;height: 1.3rem;border-radius: 2rem;content: '';position: absolute;left: .1rem;top: .1rem;transition: .2s;background-color: #fff;box-shadow: inset 0 -5px 15px rgba(0,0,0,.1), 0 2px 4px rgba(0,0,0,.2);}
+form#form_tr_optimization_active label input:checked+span{background: #01d277;}
+form#form_tr_optimization_active label input:checked+span:before{left: 1.6rem;}
+.trads_type .button.current{color: #fff;background-color: #0073aa;border-color: #0073aa;}

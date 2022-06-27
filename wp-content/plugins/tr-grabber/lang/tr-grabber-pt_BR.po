@@ -1,0 +1,997 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ToroPlay v3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-19 13:50+0100\n"
+"PO-Revision-Date: 2018-04-06 15:57-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"Language-Team: ToroThemes <torothemes@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language: pt_BR\n"
+
+#: tr-grabber.php:36 inc/constants.php:20 inc/config/index.php:43
+msgid "movie"
+msgstr "filme"
+
+#: tr-grabber.php:37 inc/constants.php:21 inc/config/index.php:44
+msgid "serie"
+msgstr "série"
+
+#: tr-grabber.php:40 inc/constants.php:24 inc/config/index.php:47
+msgid "letter"
+msgstr "letra"
+
+#: tr-grabber.php:41 tr-grabber.php:70 inc/constants.php:25
+#: inc/config/index.php:48
+msgid "{name} - Season {season}"
+msgstr "{name} - Temporada {season}"
+
+#: tr-grabber.php:43 tr-grabber.php:72 inc/constants.php:27
+#: inc/config/index.php:50
+msgid "Season {season}"
+msgstr "Temporada {season}"
+
+#: tr-grabber.php:45 inc/constants.php:30 inc/config/index.php:53
+msgid "episode"
+msgstr "episódio"
+
+#: tr-grabber.php:46 inc/constants.php:29 inc/config/index.php:52
+msgid "season"
+msgstr "temporada"
+
+#: tr-grabber.php:47 inc/constants.php:31 inc/config/index.php:54
+msgid "cast"
+msgstr "elenco"
+
+#: tr-grabber.php:48 inc/constants.php:32 inc/config/index.php:55
+msgid "cast_tv"
+msgstr "elenco_tv"
+
+#: tr-grabber.php:49 inc/constants.php:33 inc/config/index.php:56
+msgid "director"
+msgstr "diretor"
+
+#: tr-grabber.php:50 inc/constants.php:34 inc/config/index.php:57
+msgid "director_tv"
+msgstr "diretor_tv"
+
+#: inc/ajax.php:44
+msgid "There were no results. Try another search."
+msgstr "Não houve resultados. Tente outra pesquisa."
+
+#: inc/ajax.php:51 inc/ajax.php:86
+msgid "The post does not exist."
+msgstr "O post não existe."
+
+#: inc/ajax.php:53 inc/ajax.php:88
+msgid "You must enter a name."
+msgstr "Você deve digitar um nome."
+
+#: inc/ajax.php:67
+msgid "The season already exists."
+msgstr "A temporada já existe."
+
+#: inc/ajax.php:71
+msgid "You must select a season."
+msgstr "Você deve selecionar uma temporada."
+
+#: inc/ajax.php:77
+msgid "There is already a season with this name."
+msgstr "Já existe uma temporada com esse nome."
+
+#: inc/ajax.php:90
+msgid "You must enter a season number."
+msgstr "Você deve inserir um número de temporada."
+
+#: inc/ajax.php:104
+msgid "The episode already exists."
+msgstr "O episódio já existe."
+
+#: inc/ajax.php:108
+msgid "You must select a episode."
+msgstr "Você deve selecionar um episódio."
+
+#: inc/ajax.php:114
+msgid "There is already a episode with this name."
+msgstr "Já existe um episódio com este nome."
+
+#: inc/ajax.php:132 inc/ajax.php:148 inc/panel/quick-links.php:24
+msgid "There were no results."
+msgstr "Não houve resultados."
+
+#: inc/embed.php:29
+msgid "Embed"
+msgstr "Embed"
+
+#: inc/filters.php:102
+msgid " Results"
+msgstr " Resultados"
+
+#: inc/filters.php:103
+msgid "Year"
+msgstr "Ano"
+
+#: inc/filters.php:104 inc/panel/movies/movies.php:56
+#: inc/panel/movies/movies.php:59 inc/panel/series/series.php:104
+#: inc/panel/series/series.php:107
+msgid "Duration"
+msgstr "Duração"
+
+#: inc/filters.php:105 inc/panel/movies/links.php:32
+#: inc/panel/series/links-taxonomy.php:160
+msgid "Options"
+msgstr "Opções"
+
+#: inc/filters.php:124 inc/taxonomies.php:30 inc/taxonomies.php:55
+#: inc/taxonomies.php:80 inc/taxonomies.php:105 inc/taxonomies.php:128
+#: inc/taxonomies.php:150 inc/taxonomies.php:177 inc/taxonomies.php:199
+#: inc/taxonomies.php:221 inc/taxonomies.php:247 inc/taxonomies.php:269
+msgid "Edit"
+msgstr "Editar"
+
+#: inc/filters.php:124
+msgid "Delete"
+msgstr "Excluir"
+
+#: inc/filters.php:188
+msgid "Advance Search"
+msgstr "Busca Avançada"
+
+#: inc/filters.php:321 inc/filters.php:351 inc/taxonomies.php:123
+#: inc/panel/quick-links.php:36
+msgid "Season"
+msgstr "Temporada"
+
+#: inc/filters.php:322 inc/taxonomies.php:145
+msgid "Episode"
+msgstr "Episódio"
+
+#: inc/filters.php:323 inc/filters.php:352
+msgid "Post"
+msgstr "Post"
+
+#: inc/functions.php:14 inc/functions.php:48
+msgid "Backdrop"
+msgstr "Plano de Fundo"
+
+#: inc/functions.php:23
+msgid "Additional Information"
+msgstr "Informação Adicional"
+
+#: inc/functions.php:34 inc/menu.php:59 inc/menu.php:80
+msgid "Links"
+msgstr "Links"
+
+#: inc/functions.php:49
+msgid "Set backdrop image"
+msgstr "Definir imagem de plano de fundo"
+
+#: inc/functions.php:50
+msgid "Use as backdrop"
+msgstr "Use como plano de fundo"
+
+#: inc/functions.php:51
+msgid "Remove backdrop"
+msgstr "Remover plano de fundo"
+
+#: inc/functions.php:321 inc/functions.php:334
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: inc/functions.php:364 inc/functions.php:368 inc/functions.php:387
+#: inc/functions.php:391 inc/functions.php:410 inc/functions.php:414
+#: inc/functions.php:422
+#, php-format
+msgid "Image %s"
+msgstr "Imagem %s"
+
+#: inc/functions.php:440
+msgid "License"
+msgstr "Licença"
+
+#: inc/functions.php:447 inc/functions.php:495
+msgid "Check"
+msgstr "Verificar"
+
+#: inc/functions.php:447
+msgid "Error, the license is not valid"
+msgstr "Erro, a licença não é válida"
+
+#: inc/functions.php:447 inc/scripts.php:16 inc/panel/quick-links.php:74
+msgid "Loading..."
+msgstr "Carregando..."
+
+#: inc/functions.php:493 inc/functions.php:494
+msgid "Enter your license"
+msgstr "Digite sua licença"
+
+#: inc/menu.php:15 inc/menu.php:17
+msgid "Movies"
+msgstr "Filmes"
+
+#: inc/menu.php:21 inc/menu.php:23
+msgid "Series"
+msgstr "Séries"
+
+#: inc/menu.php:53 inc/menu.php:75 inc/taxonomies.php:27 inc/taxonomies.php:52
+#: inc/taxonomies.php:77 inc/taxonomies.php:102 inc/taxonomies.php:125
+#: inc/taxonomies.php:147 inc/taxonomies.php:174 inc/taxonomies.php:196
+#: inc/taxonomies.php:218 inc/taxonomies.php:244 inc/taxonomies.php:266
+msgid "All"
+msgstr "Todos"
+
+#: inc/menu.php:54
+msgid "Add Movie"
+msgstr "Adicionar Filme"
+
+#: inc/menu.php:55 inc/menu.php:77 inc/taxonomies.php:193
+#: inc/taxonomies.php:203 inc/taxonomies.php:241 inc/taxonomies.php:251
+msgid "Directors"
+msgstr "Diretores"
+
+#: inc/menu.php:56 inc/menu.php:78 inc/taxonomies.php:215
+#: inc/taxonomies.php:216 inc/taxonomies.php:225 inc/taxonomies.php:263
+#: inc/taxonomies.php:264 inc/taxonomies.php:273
+msgid "Cast"
+msgstr "Elenco"
+
+#: inc/menu.php:57 inc/taxonomies.php:171 inc/taxonomies.php:181
+msgid "Countries"
+msgstr "Países"
+
+#: inc/menu.php:61 inc/menu.php:82 inc/taxonomies.php:24 inc/taxonomies.php:34
+msgid "Servers"
+msgstr "Servidores"
+
+#: inc/menu.php:62 inc/menu.php:83 inc/taxonomies.php:49 inc/taxonomies.php:59
+msgid "Languages"
+msgstr "Idiomas"
+
+#: inc/menu.php:63 inc/menu.php:84
+msgid "Qualitys"
+msgstr "Qualidades"
+
+#: inc/menu.php:66 inc/menu.php:87
+msgid "Categories"
+msgstr "Categorias"
+
+#: inc/menu.php:76
+msgid "Add Serie"
+msgstr "Adicionar Série"
+
+#: inc/menu.php:88 inc/taxonomies.php:122 inc/taxonomies.php:132
+msgid "Seasons"
+msgstr "Temporadas"
+
+#: inc/menu.php:89 inc/taxonomies.php:144 inc/taxonomies.php:154
+msgid "Episodes"
+msgstr "Episódios"
+
+#: inc/notices.php:25
+#, php-format
+msgid ""
+"Please, %sbefore proceeding%s, set the thumbnail size correctly, %sclick here"
+"%s. (%sx%s)"
+msgstr ""
+"Por favor, %santes de prosseguir%s, defina o tamanho da miniatura "
+"corretamente, %s clique aqui%s. (%sx%s)"
+
+#: inc/notices.php:34
+#, php-format
+msgid ""
+"Please, %sbefore proceeding%s, set the backdrop size correctly, %sclick here"
+"%s. (%sx%s)"
+msgstr ""
+"Por favor, %santes de prosseguir%s, defina o tamanho do plano de fundo "
+"corretamente, %sclique aqui%s. (%sx%s)"
+
+#: inc/notices.php:45
+#, php-format
+msgid ""
+"Please, %sbefore proceeding%s, set the image episode size correctly, %sclick "
+"here%s. (%sx%s)"
+msgstr ""
+"Por favor, %santes de processeguir%s, defina o tamanho da imagem do episódio "
+"corretamente, %sclique aqui%s. (%sx%s)"
+
+#: inc/notices.php:56
+#, php-format
+msgid ""
+"Please, %sbefore proceeding%s, set the image season size correctly, %sclick "
+"here%s. (%sx%s)"
+msgstr ""
+"Por favor, %santes de prosseguir%s, defina o tamanho da imagem da temporada "
+"corretamente, %sclique aqui%s. (%sx%s)"
+
+#: inc/scripts.php:21
+msgid "Enter an ID"
+msgstr "Insira um ID"
+
+#: inc/scripts.php:32
+msgid "Loading"
+msgstr "Carregando"
+
+#: inc/scripts.php:33
+msgid "There were no results"
+msgstr "Não houve resultados"
+
+#: inc/scripts.php:34
+msgid "You must fill in the season field"
+msgstr "Você deve preencher o campo da temporada"
+
+#: inc/scripts.php:35
+msgid "You must fill in the episode field"
+msgstr "Você deve preencher o campo do episódio"
+
+#: inc/scripts.php:36
+msgid "You must fill in the type field"
+msgstr "Você deve preencher o tipo de campo"
+
+#: inc/scripts.php:37
+msgid "You must fill in the field language"
+msgstr "Você deve preencher o campo de idioma"
+
+#: inc/scripts.php:38
+msgid "You must fill in the quality field"
+msgstr "Você deve preencher o campo de qualidade"
+
+#: inc/scripts.php:39
+msgid "You must fill in the links field"
+msgstr "Você deve preencher o campo de links"
+
+#: inc/taxonomies.php:25
+msgid "Server"
+msgstr "Servidor"
+
+#: inc/taxonomies.php:26 inc/taxonomies.php:51 inc/taxonomies.php:76
+#: inc/taxonomies.php:101 inc/taxonomies.php:124 inc/taxonomies.php:146
+#: inc/taxonomies.php:173 inc/taxonomies.php:195 inc/taxonomies.php:217
+#: inc/taxonomies.php:243 inc/taxonomies.php:265
+msgid "Search"
+msgstr "Pesquisa"
+
+#: inc/taxonomies.php:28 inc/taxonomies.php:29 inc/taxonomies.php:53
+#: inc/taxonomies.php:54 inc/taxonomies.php:78 inc/taxonomies.php:79
+#: inc/taxonomies.php:103 inc/taxonomies.php:104 inc/taxonomies.php:126
+#: inc/taxonomies.php:127 inc/taxonomies.php:148 inc/taxonomies.php:149
+#: inc/taxonomies.php:175 inc/taxonomies.php:176 inc/taxonomies.php:197
+#: inc/taxonomies.php:198 inc/taxonomies.php:219 inc/taxonomies.php:220
+#: inc/taxonomies.php:245 inc/taxonomies.php:246 inc/taxonomies.php:267
+#: inc/taxonomies.php:268
+msgid "Parent"
+msgstr "Pricipal"
+
+#: inc/taxonomies.php:31 inc/taxonomies.php:56 inc/taxonomies.php:81
+#: inc/taxonomies.php:106 inc/taxonomies.php:129 inc/taxonomies.php:151
+#: inc/taxonomies.php:178 inc/taxonomies.php:200 inc/taxonomies.php:222
+#: inc/taxonomies.php:248 inc/taxonomies.php:270
+msgid "Update"
+msgstr "Atualizar"
+
+#: inc/taxonomies.php:32 inc/taxonomies.php:57 inc/taxonomies.php:82
+#: inc/taxonomies.php:107 inc/taxonomies.php:130 inc/taxonomies.php:152
+#: inc/taxonomies.php:179 inc/taxonomies.php:201 inc/taxonomies.php:223
+#: inc/taxonomies.php:249 inc/taxonomies.php:271
+msgid "Add"
+msgstr "Adicionar"
+
+#: inc/taxonomies.php:33 inc/taxonomies.php:58 inc/taxonomies.php:83
+#: inc/taxonomies.php:108 inc/taxonomies.php:131 inc/taxonomies.php:153
+#: inc/taxonomies.php:180 inc/taxonomies.php:202 inc/taxonomies.php:224
+#: inc/taxonomies.php:250 inc/taxonomies.php:272
+msgid "New"
+msgstr "Novo"
+
+#: inc/taxonomies.php:37
+msgid "server"
+msgstr "servidor"
+
+#: inc/taxonomies.php:50 inc/panel/quick-links.php:59
+#: inc/panel/quick-links.php:99 inc/panel/movies/links.php:29
+#: inc/panel/series/links-taxonomy.php:157
+msgid "Language"
+msgstr "Idioma"
+
+#: inc/taxonomies.php:62
+msgid "lang"
+msgstr "idioma"
+
+#: inc/taxonomies.php:74 inc/taxonomies.php:75 inc/taxonomies.php:84
+#: inc/panel/quick-links.php:63 inc/panel/quick-links.php:103
+#: inc/panel/movies/links.php:30 inc/panel/series/links-taxonomy.php:158
+msgid "Quality"
+msgstr "Qualidade"
+
+#: inc/taxonomies.php:87
+msgid "quality"
+msgstr "qualidade"
+
+#: inc/taxonomies.php:99 inc/taxonomies.php:109
+msgid "Letters"
+msgstr "Letras"
+
+#: inc/taxonomies.php:100
+msgid "Letter"
+msgstr "Letra"
+
+#: inc/taxonomies.php:172
+msgid "Country"
+msgstr "País"
+
+#: inc/taxonomies.php:184
+msgid "country"
+msgstr "país"
+
+#: inc/taxonomies.php:194 inc/taxonomies.php:242
+msgid "Director"
+msgstr "Diretor"
+
+#: inc/taxonomies.php:295
+msgid "0-9"
+msgstr "0-9"
+
+#: inc/tinymce-category.php:54
+msgctxt "Taxonomy Description"
+msgid "Description"
+msgstr "Descrição"
+
+#: inc/tinymce-category.php:65
+msgid ""
+"The description is not prominent by default; however, some themes may show "
+"it."
+msgstr ""
+"A descrição não é proeminente por padrão; no entanto, alguns temas podem "
+"mostrar isso."
+
+#: inc/update-db.php:11
+#, php-format
+msgid "To complete the update, you must update the database. %sMore Info%s"
+msgstr ""
+"Para concluir a atualização, você deve atualizar o banco de dados. %sMais "
+"informações%s"
+
+#: inc/update-db.php:13
+#, php-format
+msgid ""
+"Before continuing, %sit is recommended%s that you make a backup of your "
+"website."
+msgstr "Antes de continuar, %sé recomendável%s fazer um backup do seu site."
+
+#: inc/update-db.php:14
+msgid "Learn how to make a backup"
+msgstr "Aprenda como fazer um backup"
+
+#: inc/update-db.php:15
+msgid "or"
+msgstr "ou"
+
+#: inc/update-db.php:16
+msgid "Continue update"
+msgstr "Continuar a atualização"
+
+#: inc/config/advanced.php:16
+msgid "Set Time Limit"
+msgstr "Definir limite de tempo"
+
+#: inc/config/advanced.php:25
+msgid "Set Memory Limit"
+msgstr "Definir limite de memória"
+
+#: inc/config/advanced.php:33
+msgid "Message update database"
+msgstr "Atualização de banco de dados de mensagens"
+
+#: inc/config/advanced.php:35 inc/config/basic.php:86 inc/config/basic.php:93
+#: inc/config/seo.php:21
+msgid "Enable"
+msgstr "Habilitar"
+
+#: inc/config/basic.php:16
+msgid "API Key"
+msgstr "Chave API"
+
+#: inc/config/basic.php:20
+msgid "GET API KEY"
+msgstr "OBTER CHAVE API"
+
+#: inc/config/basic.php:25
+msgid "Language API"
+msgstr "Idioma API"
+
+#: inc/config/basic.php:72
+msgid "Post Status"
+msgstr "Status do Post"
+
+#: inc/config/basic.php:76
+msgid "Publish"
+msgstr "Publicar"
+
+#: inc/config/basic.php:77
+msgid "Draft"
+msgstr "Rascunho"
+
+#: inc/config/basic.php:84
+msgid "Upload Images"
+msgstr "Enviar imagens"
+
+#: inc/config/basic.php:91
+msgid "Add special seasons? (Series)"
+msgstr "Adicionar temporadas especiais? (Séries)"
+
+#: inc/config/homecontrol.php:10
+msgid "Re-order the homepage components"
+msgstr "Reordene os componentes da página inicial"
+
+#: inc/config/homecontrol.php:26
+msgid "Text for widget"
+msgstr "Texto para widget"
+
+#: inc/config/index.php:68
+msgid "Basic"
+msgstr "Básico"
+
+#: inc/config/index.php:69
+msgid "Advanced"
+msgstr "Avançado"
+
+#: inc/config/index.php:70
+msgid "SEO"
+msgstr "SEO"
+
+#: inc/config/index.php:72
+msgid "Home Control"
+msgstr "Controle Inicial"
+
+#: inc/config/index.php:84
+msgid "Save Changes"
+msgstr "Salvar alterações"
+
+#: inc/config/seo.php:12
+#, php-format
+msgid "To make changes in slugs do not forget to %supdate the permalinks%s."
+msgstr "Ao fazer alterações em slugs não esqueça %sde atualizar permalinks%s."
+
+#: inc/config/seo.php:19
+msgid "Prefix permalinks posts"
+msgstr "Prefixo permalinks de posts"
+
+#: inc/config/seo.php:22
+msgid "Use %tr_post_type% on the permanent links to activate it."
+msgstr "Use % tr_post_type% nos links permanentes para ativá-lo."
+
+#: inc/config/seo.php:28
+msgid "Prefix Movies"
+msgstr "Prefixo de Filmes"
+
+#: inc/config/seo.php:37
+msgid "Prefix Series"
+msgstr "Prefixo de Séries"
+
+#: inc/config/seo.php:46
+msgid "Prefix Seasons"
+msgstr "Prefixo de Temporadas"
+
+#: inc/config/seo.php:55
+msgid "Prefix Episodes"
+msgstr "Prefixo de Episódios"
+
+#: inc/config/seo.php:64
+msgid "Prefix Cast"
+msgstr "Prefixo de Elenco"
+
+#: inc/config/seo.php:73
+msgid "Prefix Cast TV"
+msgstr "Prefixo de Elenco TV"
+
+#: inc/config/seo.php:82
+msgid "Prefix Direcotrs"
+msgstr "Prefixo de Diretores"
+
+#: inc/config/seo.php:91
+msgid "Prefix Direcotrs TV"
+msgstr "Prefixo de Diretores TV"
+
+#: inc/config/seo.php:100
+msgid "Slug Seasons"
+msgstr "Slug Temporadas"
+
+#: inc/config/seo.php:104 inc/config/seo.php:133
+msgid ""
+"{name} to show the name of the series and {season} to show the season number."
+msgstr ""
+"{name} para mostrar o nome da série e {temporada} para mostrar o número de "
+"temporada."
+
+#: inc/config/seo.php:110
+msgid "Slug Episodes"
+msgstr "Slug de Episódios"
+
+#: inc/config/seo.php:114 inc/config/seo.php:143
+msgid ""
+"{name} to show the name of the series, {season} to show the season number "
+"and {episode} the episode number."
+msgstr ""
+"{name} para mostrar o nome da série, {season} para mostrar o número da "
+"temporada e {episode} o número do episódio."
+
+#: inc/config/seo.php:120
+msgid "Prefix Letters"
+msgstr "Prefixo de Letras"
+
+#: inc/config/seo.php:129
+msgid "Format Title Season"
+msgstr "Formato do Título de Temporada"
+
+#: inc/config/seo.php:139
+msgid "Format Title Episode"
+msgstr "Formato do Título do Episódio"
+
+#: inc/config/seo.php:149
+msgid "Format Subtitle Season"
+msgstr "Formato do Subtítulo da Temporada"
+
+#: inc/config/seo.php:153
+msgid "{season} to show the season number."
+msgstr "{season} para mostrar o número da temporada."
+
+#: inc/config/seo.php:159
+msgid "Format Subtitle Episode"
+msgstr "Formato do Subtítulo do Episódio"
+
+#: inc/config/seo.php:163
+msgid "{name} to show the name of the series."
+msgstr "{name} para mostrar o nome da série."
+
+#: inc/panel/init.php:31
+msgid "Go"
+msgstr "Ir"
+
+#: inc/panel/init.php:34
+msgid "EXAMPLE"
+msgstr "EXEMPLO"
+
+#: inc/panel/init.php:51
+msgid "Add seasons (API)"
+msgstr "Adicionar temporadas (API)"
+
+#: inc/panel/init.php:51
+msgid "Update seasons (API)"
+msgstr "Atualizar temporadas (API)"
+
+#: inc/panel/init.php:52
+msgid "Add episodes (API)"
+msgstr "Adicionar episódios (API)"
+
+#: inc/panel/init.php:52
+msgid "Update episodes (API)"
+msgstr "Atualizar episódios (API)"
+
+#: inc/panel/init.php:68 inc/panel/init.php:98 inc/panel/init.php:120
+msgid "Special"
+msgstr "Especial"
+
+#: inc/panel/init.php:68 inc/panel/init.php:98 inc/panel/init.php:120
+#, php-format
+msgid "S%s"
+msgstr "S%s"
+
+#: inc/panel/init.php:84 inc/panel/quick-links.php:31
+#: inc/panel/quick-links.php:87 inc/panel/movies/links.php:13
+#: inc/panel/series/links-taxonomy.php:141
+msgid "Quick Links"
+msgstr "Links Rápidos"
+
+#: inc/panel/init.php:92
+msgid "View Seasons"
+msgstr "Visualizar Temporadas"
+
+#: inc/panel/init.php:114
+msgid "View Episodes"
+msgstr "Visualizar Episódios"
+
+#: inc/panel/quick-links.php:37
+msgid "Select season"
+msgstr "Selecione temporada"
+
+#: inc/panel/quick-links.php:40
+msgid "Initial episode"
+msgstr "Episódio inicial"
+
+#: inc/panel/quick-links.php:42
+msgid "Select a season"
+msgstr "Selecione uma temporada"
+
+#: inc/panel/quick-links.php:52 inc/panel/quick-links.php:92
+#: inc/panel/movies/links.php:28 inc/panel/series/links-taxonomy.php:156
+msgid "Type"
+msgstr "Tipo"
+
+#: inc/panel/quick-links.php:54 inc/panel/quick-links.php:94
+msgid "Online"
+msgstr "Online"
+
+#: inc/panel/quick-links.php:55 inc/panel/quick-links.php:95
+msgid "Download"
+msgstr "Download"
+
+#: inc/panel/quick-links.php:60
+msgid "Select a language"
+msgstr "Selecione um idioma"
+
+#: inc/panel/quick-links.php:64
+msgid "Select a quality"
+msgstr "Selecione uma qualidade"
+
+#: inc/panel/quick-links.php:72 inc/panel/quick-links.php:112
+msgid "Save Links"
+msgstr "Salvar Links"
+
+#: inc/panel/quick-links.php:87
+msgid ""
+"Add links quickly. To use this function add the links one below the other."
+msgstr ""
+"Adicione links rapidamente. Para usar essa função, adicione os links um "
+"abaixo do outro."
+
+#: inc/panel/movies/links.php:12 inc/panel/series/links-taxonomy.php:140
+msgid "Add link"
+msgstr "Adicionar link"
+
+#: inc/panel/movies/links.php:17 inc/panel/series/links-taxonomy.php:145
+msgid "Generate"
+msgstr "Gerar"
+
+#: inc/panel/movies/links.php:19 inc/panel/series/links-taxonomy.php:147
+msgid "URL INVALID"
+msgstr "URL INVÁLIDA"
+
+#: inc/panel/movies/links.php:27 inc/panel/series/links-taxonomy.php:155
+msgid "Order"
+msgstr "Ordem"
+
+#: inc/panel/movies/links.php:31 inc/panel/series/links-taxonomy.php:159
+msgid "Link"
+msgstr "Link"
+
+#: inc/panel/movies/links.php:77 inc/panel/movies/links.php:83
+#: inc/panel/movies/links.php:96 inc/panel/series/links-taxonomy.php:205
+#: inc/panel/series/links-taxonomy.php:211
+#: inc/panel/series/links-taxonomy.php:224
+msgid "Select"
+msgstr "Selecione"
+
+#: inc/panel/movies/movies.php:28 inc/panel/movies/movies.php:31
+#: inc/panel/series/series.php:55 inc/panel/series/series.php:58
+msgid "Original name"
+msgstr "Nome original"
+
+#: inc/panel/movies/movies.php:37 inc/panel/movies/movies.php:40
+#: inc/panel/series/series.php:85 inc/panel/series/series.php:88
+msgid "Poster Hotlink"
+msgstr "Hiperlink Cartaz"
+
+#: inc/panel/movies/movies.php:46 inc/panel/movies/movies.php:49
+#: inc/panel/series/series.php:94 inc/panel/series/series.php:97
+msgid "Backdrop Hotlink"
+msgstr "Hiperlink do plano de fundo"
+
+#: inc/panel/movies/movies.php:65 inc/panel/movies/movies.php:68
+msgid "Release date"
+msgstr "Data de lançamento"
+
+#: inc/panel/movies/movies.php:74 inc/panel/series/series.php:131
+msgid "Trailer"
+msgstr "Trailer"
+
+#: inc/panel/movies/movies.php:79 inc/panel/series/series.php:136
+msgid "Insert code iframe here"
+msgstr "Inserir código iframe aqui"
+
+#: inc/panel/series/episodes-fields.php:13
+#: inc/panel/series/episodes-fields.php:68
+#: inc/panel/series/episodes-fields.php:90
+#: inc/panel/series/episodes-fields.php:92
+#: inc/panel/series/episodes-fields.php:149
+#: inc/panel/series/seasons-fields.php:13
+#: inc/panel/series/seasons-fields.php:56
+#: inc/panel/series/seasons-fields.php:77
+#: inc/panel/series/seasons-fields.php:79
+#: inc/panel/series/seasons-fields.php:100
+msgid "Poster"
+msgstr "Cartaz"
+
+#: inc/panel/series/episodes-fields.php:14
+#: inc/panel/series/seasons-fields.php:14
+msgid "Set poster"
+msgstr "Definir Cartaz"
+
+#: inc/panel/series/episodes-fields.php:15
+#: inc/panel/series/episodes-fields.php:91
+#: inc/panel/series/seasons-fields.php:15
+#: inc/panel/series/seasons-fields.php:78
+msgid "Use as poster"
+msgstr "Usa como cartaz"
+
+#: inc/panel/series/episodes-fields.php:16
+#: inc/panel/series/seasons-fields.php:16
+msgid "Remove poster"
+msgstr "Remover cartaz"
+
+#: inc/panel/series/episodes-fields.php:22
+#: inc/panel/series/seasons-fields.php:22
+msgid "Search serie"
+msgstr "Pesquisar série"
+
+#: inc/panel/series/episodes-fields.php:30
+#: inc/panel/series/seasons-fields.php:30
+msgid "ID Serie"
+msgstr "ID Série"
+
+#: inc/panel/series/episodes-fields.php:31
+#: inc/panel/series/seasons-fields.php:31
+msgid "Enter the post ID or use the search engine above"
+msgstr "Digite o ID do post ou use o mecanismo de pesquisa acima"
+
+#: inc/panel/series/episodes-fields.php:36
+#: inc/panel/series/seasons-fields.php:36
+msgid "Season number"
+msgstr "Número da temporada"
+
+#: inc/panel/series/episodes-fields.php:38
+msgid "Select serie"
+msgstr "Seleciona Série"
+
+#: inc/panel/series/episodes-fields.php:43
+msgid "Episode number"
+msgstr "Número do episódio"
+
+#: inc/panel/series/episodes-fields.php:48
+#: inc/panel/series/episodes-fields.php:113
+#: inc/panel/series/seasons-fields.php:46
+#: inc/panel/series/seasons-fields.php:124
+msgid "Subtitle"
+msgstr "Subtítulo"
+
+#: inc/panel/series/episodes-fields.php:53
+#: inc/panel/series/episodes-fields.php:140
+#: inc/panel/series/seasons-fields.php:51
+#: inc/panel/series/seasons-fields.php:133
+msgid "Synopsis"
+msgstr "Sinopse"
+
+#: inc/panel/series/episodes-fields.php:58
+#: inc/panel/series/episodes-fields.php:122
+#: inc/panel/series/seasons-fields.php:41
+msgid "Air Date"
+msgstr "Data de Exibição"
+
+#: inc/panel/series/episodes-fields.php:63
+#: inc/panel/series/episodes-fields.php:131
+msgid "Guest stars"
+msgstr "Estrelas convidadas"
+
+#: inc/panel/series/episodes-fields.php:70
+#: inc/panel/series/episodes-fields.php:154
+#: inc/panel/series/seasons-fields.php:58
+#: inc/panel/series/seasons-fields.php:105 inc/panel/taxonomies/cast.php:25
+#: inc/panel/taxonomies/cast.php:54 inc/panel/taxonomies/language.php:24
+#: inc/panel/taxonomies/language.php:53 inc/panel/taxonomies/server.php:24
+#: inc/panel/taxonomies/server.php:53
+msgid "External url"
+msgstr "URL Externo"
+
+#: inc/panel/series/episodes-fields.php:72
+#: inc/panel/series/episodes-fields.php:156
+#: inc/panel/series/seasons-fields.php:60
+#: inc/panel/series/seasons-fields.php:107 inc/panel/taxonomies/cast.php:27
+#: inc/panel/taxonomies/cast.php:56 inc/panel/taxonomies/language.php:26
+#: inc/panel/taxonomies/language.php:55 inc/panel/taxonomies/server.php:26
+#: inc/panel/taxonomies/server.php:55
+msgid "Upload Image"
+msgstr "Enviar Imagem"
+
+#: inc/panel/series/episodes-fields.php:82
+#: inc/panel/series/seasons-fields.php:69
+msgid "Save"
+msgstr "Salvar"
+
+#: inc/panel/series/episodes-fields.php:94
+#: inc/panel/series/seasons-fields.php:81 inc/panel/taxonomies/cast.php:41
+#: inc/panel/taxonomies/language.php:39 inc/panel/taxonomies/server.php:39
+msgid "image"
+msgstr "imagem"
+
+#: inc/panel/series/episodes-fields.php:106
+#: inc/panel/series/seasons-fields.php:93
+msgid "View Post"
+msgstr "Ver Postagem"
+
+#: inc/panel/series/episodes-fields.php:107
+#: inc/panel/series/seasons-fields.php:94
+msgid "Advanced form"
+msgstr "Formulário avançado"
+
+#: inc/panel/series/episodes.php:79 inc/panel/series/seasons.php:78
+msgid "Specials"
+msgstr "Especiais"
+
+#: inc/panel/series/seasons-fields.php:115
+msgid "Air date"
+msgstr "Data de exibição"
+
+#: inc/panel/series/series.php:64
+msgid "In production"
+msgstr "Em produção"
+
+#: inc/panel/series/series.php:68
+msgid "Yes"
+msgstr "Sim"
+
+#: inc/panel/series/series.php:69
+msgid "No"
+msgstr "Não"
+
+#: inc/panel/series/series.php:76 inc/panel/series/series.php:79
+msgid "Status"
+msgstr "Status"
+
+#: inc/panel/series/series.php:113 inc/panel/series/series.php:116
+msgid "First air date"
+msgstr "Primeira data de exibição"
+
+#: inc/panel/series/series.php:122 inc/panel/series/series.php:125
+msgid "Last air date"
+msgstr "Última data de exibição"
+
+#: inc/panel/taxonomies/cast.php:15 inc/panel/taxonomies/cast.php:23
+#: inc/panel/taxonomies/cast.php:37 inc/panel/taxonomies/cast.php:39
+#: inc/panel/taxonomies/cast.php:49
+msgid "Photo"
+msgstr "Foto"
+
+#: inc/panel/taxonomies/cast.php:16
+msgid "Set photo"
+msgstr "Definir foto"
+
+#: inc/panel/taxonomies/cast.php:17 inc/panel/taxonomies/cast.php:38
+msgid "Use as photo"
+msgstr "Use como foto"
+
+#: inc/panel/taxonomies/cast.php:18
+msgid "Remove photo"
+msgstr "Remover foto"
+
+#: inc/panel/taxonomies/language.php:13 inc/panel/taxonomies/language.php:21
+#: inc/panel/taxonomies/language.php:35 inc/panel/taxonomies/language.php:37
+#: inc/panel/taxonomies/language.php:47 inc/panel/taxonomies/server.php:13
+#: inc/panel/taxonomies/server.php:21 inc/panel/taxonomies/server.php:35
+#: inc/panel/taxonomies/server.php:37 inc/panel/taxonomies/server.php:47
+msgid "Icon"
+msgstr "Ícone"
+
+#: inc/panel/taxonomies/language.php:14 inc/panel/taxonomies/server.php:14
+msgid "Set icon"
+msgstr "Definir ícone"
+
+#: inc/panel/taxonomies/language.php:15 inc/panel/taxonomies/language.php:36
+#: inc/panel/taxonomies/server.php:15 inc/panel/taxonomies/server.php:36
+msgid "Use as icon"
+msgstr "Use como ícone"
+
+#: inc/panel/taxonomies/language.php:16 inc/panel/taxonomies/server.php:16
+msgid "Remove icon"
+msgstr "Remover ícone"
+
+#: inc/panel/taxonomies/language.php:23 inc/panel/taxonomies/language.php:52
+#: inc/panel/taxonomies/server.php:23 inc/panel/taxonomies/server.php:52
+msgid "Remove"
+msgstr "Remover"

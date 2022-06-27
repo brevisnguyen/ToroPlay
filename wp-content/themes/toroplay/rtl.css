@@ -1,0 +1,188 @@
+body{direction:rtl;unicode-bidi:embed}
+.MovieListTopCn,.MovieListSldCn,.Season-EpisodesCn{direction:ltr}
+.MovieListSldCn .TPMvCn{direction:rtl}
+.TPost.D .TPMvCn .Title,.TPost.C .TPMvCn .Title, .TPMvCn .Title{text-align: right!important;}
+p.Info>span,section>.Top>h1, section>.Top>.Title,.SearchMovies label:before,.Description p[class]:before,.Cast img{margin-right: 0!important;margin-left: .5rem;}
+.Wdgt>.Title:before, .Wdgt>.Title:after{left: auto;right: 0;}
+.TPost.A{padding-left: 0;padding-right: 65px;}
+.TPost.A .Image{left: auto;right: 0;}
+.TPost .Top{left: auto!important;right: -5px;}
+.TPost .Top:before, .TPost .Top:after{right: auto!important;left: -5px;transform: scale(-1, 1);}
+p.Info>span:before{margin-right: 0 !important;margin-left: .2rem;}
+.SearchMovies .Form-Select select{padding-right: 2.5rem;}
+.widget_nav_menu>div>ul{padding-right: 0;}
+.TPTblCn td:first-child {border-radius: 0 50px 50px 0!important;}
+.TPTblCn td:last-child {border-radius: 50px 0 0 50px!important;}
+.TPTblCnMvs th:first-child, .TPTblCnMvs th:nth-child(2), .TPTblCnMvs td:first-child, .TPTblCnMvs td:nth-child(2), .TPTblCnMvs td:nth-child(3){text-align: right !important;}
+.TPTblCn th:first-child, .TPTblCn td:first-child,.TPTblCn td.MvTbImg{padding-right: 20px !important;padding-left: 0;}
+.TPTblCn td.MvTbTtl{padding-right: 10px !important;padding-left: 20px !important;}
+.TPMvCn .Description p[class]>i{margin-left: 0 !important;margin-right: 3px!important;}
+.MenuBtn{right: auto !important;left: 1.25rem !important;}
+.Menu .menu-item-has-children>a, .widget_nav_menu .menu-item-has-children>a{padding-right: 1rem !important;padding-left: 1.5rem !important;}
+.Menu li[class*="AAIco-"]>a, .Menu li[class*="fa-"]>a, .menu li[class*="AAIco-"]>a, .menu li[class*="fa-"]>a{padding-left: 1rem !important;padding-right: 2.5rem !important;}
+.Menu li[class*="AAIco-"]:before, .Menu li[class*="fa-"]:before, .menu li[class*="AAIco-"]:before, .menu li[class*="fa-"]:before{left: auto !important;right: 1rem !important;}
+.menu-item-has-children>i:before{right: auto !important;left: .2rem !important;}
+.widget_nav_menu>div>ul>li>i:before{left: 1.25rem !important;}
+.TPTblCn span img{margin-right: 0;margin-left: 5px;}
+caption, td, th{text-align: right!important;}
+.InfoList>li{padding-left: 0!important;padding-right: 1.2rem!important;}
+.InfoList>li:before{left: auto !important;right: 0 !important;}
+.MovieTabNav .Lnk{margin-right: 0;margin-left: 1.25rem!important;}
+.MovieTabNav .Lnk:last-child{margin-left: 0 !important;}
+.MovieTabNav .Lnk:before{margin-right: 0;margin-left: .5rem!important;}
+.TPlayerNv>li.Button{float: right !important;}
+.TPlayerNv>li.Button{margin-right: 0 !important;margin-left: .5rem !important;}
+.TPlayerNv>li.Button:last-child{margin-left: 0 !important;}
+.Wdgt.AABox .Title>i:before{right: auto !important;left: 1.25rem !important;}
+.TPost.Single.Episode header{padding-right: 0!important;}
+.TPost.Single.Episode footer{margin-right: 0 !important;}
+.Result{right: auto;left: 0;}
+.Result:before{right: auto;left: 2rem;}
+.Result .TPost.A{text-align: right;}
+
+@media screen and (max-width:62em){
+    .Logo{padding-right: 0!important;padding-left: 4rem;}
+    .Header .Rght{left: auto !important;right: -270px !important;}
+    .Header .Menu{text-align: right;}
+    .Tp-Wp.show .Header .Rght{left: auto !important;right: 0 !important;}
+    .menu-item-has-children>i:before{right: auto !important;left: 1rem !important;}
+    .Footer .Menu>ul>li{text-align: right;}
+}
+@media screen and (min-width:34em){
+    .MovieTabNav .Lnk{margin-left: 2.5rem!important;margin-right: 0 !important;}
+    .MovieTabNav .Lnk:last-child{margin-left: 0 !important;}
+}
+@media screen and (min-width:48em){
+    .TPost.Single header{padding-left: 0!important;padding-right: 200px!important;}
+    .TPost.Single .Image{left: auto !important;right: 0 !important;}
+}
+@media screen and (min-width:62em){
+    .Logo, .MnBr .Menu, .MnBr .Menu>ul>li{float: right!important;}
+    .Logo{margin-right: 0!important;margin-left: 2rem;}
+    .Search{float: left;}
+    .TpRwCont>main{padding-left: 1.25rem;padding-right: 0!important;}
+    .ListSocial{float: left!important;}
+    .TpRwCont:not(.NoSdbr){direction: ltr!important}
+    .TpRwCont>main, .TpRwCont>aside{direction: rtl!important}
+    .TpRwCont:not(.NoSdbr)>main{padding-right: 1.25rem!important;padding-left: 0!important;}
+    .TpRwCont.TpLCol:not(.NoSdbr){direction: rtl!important}    
+    .TpRwCont.TpLCol:not(.NoSdbr)>main{padding-left: 1.25rem!important;padding-right: 0!important;}
+    .FullW .Footer .MnBrCn{margin-left: 0 !important;margin-right: 0 !important;}
+    .Menu .sub-menu, .widget_nav_menu>div>ul .sub-menu{text-align: right;}
+    .Menu .sub-menu{left: auto !important;right: 0 !important;}
+    .Menu>ul>li.menu-item-has-children:after, .widget_nav_menu>div>ul>li.menu-item-has-children:after{left: auto !important;right: 2rem !important;}
+    .MovieList{direction: rtl}
+    .Search{width: 170px !important;}
+    .TPost.Single footer{margin-left: 0 !important;margin-right: 200px !important;}
+    .TPost.Single.Episode header .Title, .TPost.Single.Episode header .SubTitle, .TPost.Single.Seasons header .Title, .TPost.Single.Seasons header .SubTitle,.TpTvSw{padding-right: 0 !important;padding-left: 170px;}
+    .TPost.Single.Episode .Select-Season, .TPost.Single.Seasons .Select-Season{right: auto !important;left: 0;}
+    section>.Top .SearchMovies{float: left!important}
+}
+@media screen and (min-width:62em) and (max-width:70em){
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n-1) .TPMvCn,
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n) .TPMvCn{right:auto!important;left:80%!important}
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n-1) .TPMvCn:before,
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n-1) .TPMvCn,
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n) .TPMvCn{right:auto!important;left:80%!important}
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n-1) .TPMvCn:before,
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n+2) .TPMvCn,
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n+2) .TPMvCn:before,
+    .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(4n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n+2) .TPMvCn,
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n+2) .TPMvCn:before,
+    .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(5n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}
+@media screen and (min-width:70em){
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n-1) .TPMvCn,
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n) .TPMvCn{right:auto!important;left:80%!important}
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n-1) .TPMvCn:before,
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n-1) .TPMvCn,
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n) .TPMvCn{right:auto!important;left:80%!important}
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n-1) .TPMvCn:before,
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+2) .TPMvCn,
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+1) .TPMvCn{left:auto!important;right:80%!important}
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+2) .TPMvCn:before,
+    body:not(.FullW) .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+2) .TPMvCn,
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+1) .TPMvCn{left:auto!important;right:80%!important}
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+2) .TPMvCn:before,
+    body:not(.FullW) .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}
+@media screen and (min-width:70em) and (max-width:83em){
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important} 
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(5n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(7n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}
+@media screen and (min-width:83em) and (max-width:90em){    
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(6n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(8n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}
+@media screen and (min-width:90em) and (max-width:100em){
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(7n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(9n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}
+@media screen and (min-width:100em){
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n-1) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n) .TPMvCn{right:auto!important;left:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n-1) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n) .TPMvCn:before{border-left:0!important;border-right:10px solid #fff!important;right:auto!important;left:-9px!important}    
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol:not(.NoSdbr) .MovieList>li:nth-child(8n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n+2) .TPMvCn,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n+1) .TPMvCn{left:auto!important;right:80%!important}
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n+2) .TPMvCn:before,
+    .FullW .TpRwCont.TpLCol.NoSdbr .MovieList>li:nth-child(10n+1) .TPMvCn:before{border-right:0!important;border-left:10px solid #fff!important;left:auto!important;right:-9px!important}
+}

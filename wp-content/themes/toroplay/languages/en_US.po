@@ -1,0 +1,1659 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ToroPlay 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-19 13:47+0100\n"
+"PO-Revision-Date: 2018-03-19 13:48+0100\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Language-Team: Torothemes <torothemes@gmail.com>\n"
+
+#: 404.php:16
+#, php-format
+msgid "%s404%s %sSorry, we have nothing to show%s"
+msgstr ""
+
+#: comments.php:35
+#, php-format
+msgid "Comments %s%s%s"
+msgstr ""
+
+#: footer.php:60
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet "
+"vestibulum ipsum vel laoreet. Donec varius sit amet justo vitae pulvinar. "
+"Morbi varius enim a lorem elementum, quis pretium quam semper. Duis "
+"consectetur quam lorem, nec faucibus tellus elementum quis. Praesent feugiat "
+"ut nibh vel euismod. Vivamus nulla odio, porta id felis sed, malesuada "
+"tempus turpis. Etiam non mauris ac mi efficitur gravida. Morbi tempor metus "
+"sed massa porta tempus. Ut sem felis, ornare nec lorem eget, tempor rhoncus "
+"est. Aliquam eget dui sed leo aliquet ultricies. Suspendisse nec tincidunt "
+"velit. Proin sagittis aliquet gravida. Etiam quam tortor, lobortis nec "
+"volutpat eget, ultricies non turpis. Sed fringilla, lectus id bibendum "
+"tristique, massa odio accumsan dolor, eget laoreet nibh risus ut massa."
+msgstr ""
+
+#: formsearch.php:11
+msgid "Search..."
+msgstr ""
+
+#: formsearch.php:16 functions.php:258 inc/admin.php:20
+msgid "Loading"
+msgstr ""
+
+#: functions.php:85
+msgid "Primary"
+msgstr ""
+
+#: functions.php:86
+msgid "Secondary Menu"
+msgstr ""
+
+#: functions.php:87
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:167 inc/customizer/customizer.php:40
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:169 functions.php:179 functions.php:189 functions.php:199
+#: functions.php:209 functions.php:219 functions.php:229
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:177
+msgid "Home Sidebar"
+msgstr ""
+
+#: functions.php:187
+msgid "Sidebar Categories"
+msgstr ""
+
+#: functions.php:197
+msgid "Sidebar Single Movies"
+msgstr ""
+
+#: functions.php:207
+msgid "Sidebar Single Series"
+msgstr ""
+
+#: functions.php:217
+msgid "Sidebar Seasons"
+msgstr ""
+
+#: functions.php:227
+msgid "Sidebar Episodes"
+msgstr ""
+
+#: functions.php:259 inc/advanced-search.php:220
+msgid "There were no results"
+msgstr ""
+
+#: functions.php:284
+msgid "Please rate only 1 post at a time."
+msgstr ""
+
+#: taxonomy-letters.php:34 inc/links.php:297 inc/links.php:385
+msgid "#"
+msgstr ""
+
+#: taxonomy-letters.php:35
+#, php-format
+msgid "%s Results"
+msgstr ""
+
+#: taxonomy-letters.php:36
+msgid "Year"
+msgstr ""
+
+#: taxonomy-letters.php:37 inc/widgets/widget-trfilter.php:158
+msgid "Quality"
+msgstr ""
+
+#: taxonomy-letters.php:38
+msgid "Duration"
+msgstr ""
+
+#: taxonomy-letters.php:39 inc/widgets/widget-trfilter.php:131
+msgid "Genres"
+msgstr ""
+
+#: taxonomy-letters.php:41
+msgid "VOTES"
+msgstr ""
+
+#: inc/admin.php:1781 inc/advanced-search.php:182
+msgid "No results found."
+msgstr ""
+
+#: inc/admin_ads.php:5 inc/admin_ads.php:117
+msgid "Ads Manager"
+msgstr ""
+
+#: inc/admin_ads.php:28
+msgid "Changes have been saved successfully."
+msgstr ""
+
+#: inc/admin_ads.php:85
+msgid "Header Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:87
+msgid "Top List"
+msgstr ""
+
+#: inc/admin_ads.php:89
+msgid "Bottom List"
+msgstr ""
+
+#: inc/admin_ads.php:91
+msgid "Single Movies Top"
+msgstr ""
+
+#: inc/admin_ads.php:93
+msgid "Single Movies Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:95
+msgid "Single Series Top"
+msgstr ""
+
+#: inc/admin_ads.php:97
+msgid "Single Series Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:99
+msgid "Single Episode Top"
+msgstr ""
+
+#: inc/admin_ads.php:101
+msgid "Single Episode Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:103
+msgid "Single Season Top"
+msgstr ""
+
+#: inc/admin_ads.php:105
+msgid "Single Season Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:107
+msgid "Single Player Top"
+msgstr ""
+
+#: inc/admin_ads.php:109
+msgid "Single Player Bottom"
+msgstr ""
+
+#: inc/admin_ads.php:111
+msgid "Single Player Inside"
+msgstr ""
+
+#: inc/admin_ads.php:121
+msgid ""
+"Manage ads on your site easily. Remember that if you add desktop ads they "
+"will not be seen on mobile unless you also add it on mobile. Keep in mind "
+"that if you exceed 300px wide and your banner is not responsive it will not "
+"fit well to all screens."
+msgstr ""
+
+#: inc/admin_ads.php:133
+msgid "Preview"
+msgstr ""
+
+#: inc/admin_ads.php:134
+msgid "Desktop"
+msgstr ""
+
+#: inc/admin_ads.php:134
+msgid "Mobile"
+msgstr ""
+
+#: inc/admin_ads.php:135 inc/admin_ads.php:136
+msgid "Insert code here"
+msgstr ""
+
+#: inc/admin_ads.php:145
+msgid "Save changes"
+msgstr ""
+
+#: inc/advanced-search.php:177
+msgid "All results"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:918
+#: inc/class-tgm-plugin-activation.php:2624
+#: inc/class-tgm-plugin-activation.php:3671
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:3250
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:395
+#: inc/class-tgm-plugin-activation.php:3043
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1025
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1025
+#: inc/class-tgm-plugin-activation.php:1028
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1028
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1212
+#: inc/class-tgm-plugin-activation.php:3039
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2073
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2364
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2367
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2383
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2386
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2389
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2406
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2410
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2412
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2418
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2421
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2424
+msgid "Update recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2433
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2479
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2483
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2487
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2491
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2573
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2581
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2589
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2601
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2624
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2638
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2639
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2640 inc/widgets/widget-trposts.php:429
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2644
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2645
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2694
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2705
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2775
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2808
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2814
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2817
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2848
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2891
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2999
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3025
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3249
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3589
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3592
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3598
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3600
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3600
+#: inc/class-tgm-plugin-activation.php:3608
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3600
+#: inc/class-tgm-plugin-activation.php:3608
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3601
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3603
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3606
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3608
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3609
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3611
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/filters.php:25 inc/customizer/customizer.php:1038
+#: inc/customizer/customizer.php:1045
+msgid "Related"
+msgstr ""
+
+#: inc/filters.php:46
+msgid "This theme requires TR Grabber plugin activation to work."
+msgstr ""
+
+#: inc/links.php:70 inc/links.php:182
+#, php-format
+msgid "Option %s"
+msgstr ""
+
+#: inc/links.php:253 inc/links.php:271 inc/links.php:275 inc/links.php:341
+#: inc/links.php:359 inc/links.php:363 inc/template-tags.php:188
+#: inc/template-tags.php:206 inc/template-tags.php:219
+#: inc/template-tags.php:270 inc/template-tags.php:361
+#: inc/template-tags.php:417 inc/template-tags.php:651
+msgid "Unknown"
+msgstr ""
+
+#: inc/links.php:253 inc/links.php:341
+#, php-format
+msgid "Download %s"
+msgstr ""
+
+#: inc/links.php:269 inc/links.php:357 inc/template-functions.php:82
+#: inc/template-functions.php:90 inc/template-functions.php:94
+#: inc/template-functions.php:106 inc/template-functions.php:113
+#: inc/template-functions.php:117 inc/template-functions.php:136
+#: inc/template-functions.php:140 inc/template-functions.php:148
+#: inc/template-tags.php:530
+#, php-format
+msgid "Image %s"
+msgstr ""
+
+#: inc/links.php:280 inc/links.php:368
+msgid "Download"
+msgstr ""
+
+#: inc/links.php:298 inc/links.php:386
+msgid "TYPE"
+msgstr ""
+
+#: inc/links.php:299 inc/links.php:387
+msgid "SERVER"
+msgstr ""
+
+#: inc/links.php:300 inc/links.php:388
+msgid "LANGUAGE"
+msgstr ""
+
+#: inc/links.php:301 inc/links.php:389
+msgid "QUALITY"
+msgstr ""
+
+#: inc/menu-custom-fields.php:110
+msgid "Icon"
+msgstr ""
+
+#: inc/menu-custom-fields.php:117
+msgid "Submenu on columns: "
+msgstr ""
+
+#: inc/shortcodes.php:101 inc/template-functions.php:848
+msgid "View more"
+msgstr ""
+
+#: inc/template-functions.php:164 inc/template-functions.php:169
+#: inc/template-functions.php:171
+msgid "Background"
+msgstr ""
+
+#: inc/template-functions.php:205 inc/widgets/widget-trposts.php:327
+#: inc/widgets/widget-trposts.php:352
+msgid "TV"
+msgstr ""
+
+#: inc/template-functions.php:223 inc/widgets/widget-trposts.php:439
+msgid "All"
+msgstr ""
+
+#: inc/template-functions.php:224 inc/widgets/widget-trposts.php:433
+msgid "Movies"
+msgstr ""
+
+#: inc/template-functions.php:225 inc/widgets/widget-trposts.php:436
+msgid "Series"
+msgstr ""
+
+#: inc/template-functions.php:278 inc/template-functions.php:290
+msgid "Close"
+msgstr ""
+
+#: inc/template-functions.php:353
+msgid "Themes Movies Online"
+msgstr ""
+
+#: inc/template-functions.php:354
+msgid "Theme Movie Online"
+msgstr ""
+
+#: inc/template-functions.php:355
+msgid "Movies Online WordPress"
+msgstr ""
+
+#: inc/template-functions.php:356
+msgid "Themes WordPress Movie"
+msgstr ""
+
+#: inc/template-functions.php:450 inc/template-functions.php:493
+#: inc/customizer/customizer.php:502
+msgid "Latest Movies"
+msgstr ""
+
+#: inc/template-functions.php:455 inc/customizer/customizer.php:537
+msgid "Latest Series"
+msgstr ""
+
+#: inc/template-functions.php:460 inc/customizer/customizer.php:572
+msgid "Latest Seasons"
+msgstr ""
+
+#: inc/template-functions.php:465 inc/customizer/customizer.php:607
+msgid "Latest Episodes"
+msgstr ""
+
+#: inc/template-functions.php:470 inc/template-functions.php:474
+#: inc/template-functions.php:481 inc/template-functions.php:485
+#: inc/template-functions.php:489 inc/template-functions.php:499
+#: inc/template-functions.php:506 inc/template-functions.php:513
+#: inc/template-functions.php:543 inc/template-functions.php:550
+#: inc/customizer/customizer.php:642 inc/customizer/customizer.php:678
+#: inc/customizer/customizer.php:714 inc/customizer/customizer.php:750
+#: inc/customizer/customizer.php:858 inc/customizer/customizer.php:894
+#: inc/customizer/customizer.php:930 inc/customizer/customizer.php:966
+#: inc/customizer/customizer.php:1002
+msgid "{title}"
+msgstr ""
+
+#: inc/template-functions.php:478 inc/widgets/widget-trfilter.php:32
+msgid "Search"
+msgstr ""
+
+#: inc/template-functions.php:521 inc/customizer/customizer.php:786
+#, php-format
+msgid "{title} %s- Season {season}%s"
+msgstr ""
+
+#: inc/template-functions.php:532
+#, php-format
+msgid "%s %sSpecial%s"
+msgstr ""
+
+#: inc/template-functions.php:534 inc/customizer/customizer.php:822
+#, php-format
+msgid "{title} %s{season}x{episode}%s"
+msgstr ""
+
+#: inc/template-functions.php:773
+msgid "&laquo; Previous"
+msgstr ""
+
+#: inc/template-functions.php:774
+msgid "Next &raquo;"
+msgstr ""
+
+#: inc/template-functions.php:777
+#, php-format
+msgid "Page %s of %s"
+msgstr ""
+
+#: inc/template-functions.php:808
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/template-functions.php:981
+msgid "License"
+msgstr ""
+
+#: inc/template-functions.php:988 inc/template-functions.php:1034
+msgid "Check"
+msgstr ""
+
+#: inc/template-functions.php:988
+msgid "Error, the license is not valid"
+msgstr ""
+
+#: inc/template-functions.php:988
+msgid "Loading..."
+msgstr ""
+
+#: inc/template-functions.php:1032 inc/template-functions.php:1033
+msgid "Enter your license"
+msgstr ""
+
+#: inc/template-tags.php:99
+#, php-format
+msgid "%1$sGenre:%2$s %3$s"
+msgstr ""
+
+#: inc/template-tags.php:122
+#, php-format
+msgid "%1$sDirector:%2$s %3$s"
+msgstr ""
+
+#: inc/template-tags.php:130
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:133
+#, php-format
+msgid "%1$sTags:%2$s %3$s"
+msgstr ""
+
+#: inc/template-tags.php:156 inc/template-tags.php:158
+#, php-format
+msgid "%1$sCast:%2$s %3$s"
+msgstr ""
+
+#: inc/template-tags.php:156
+msgid "View More"
+msgstr ""
+
+#: inc/template-tags.php:156
+msgid "View Less"
+msgstr ""
+
+#: inc/template-tags.php:250
+#, php-format
+msgid "%s Episodes"
+msgstr ""
+
+#: inc/template-tags.php:454
+#, php-format
+msgid "%s votes%s"
+msgstr ""
+
+#: inc/template-tags.php:464
+msgid "Yes"
+msgstr ""
+
+#: inc/template-tags.php:464
+msgid "No"
+msgstr ""
+
+#: inc/template-tags.php:606 inc/template-tags.php:621
+msgid "Season"
+msgstr ""
+
+#: inc/template-tags.php:606
+msgid "Episodes"
+msgstr ""
+
+#: inc/template-tags.php:612
+#, php-format
+msgid "Season %s %sEp.%s"
+msgstr ""
+
+#: inc/template-tags.php:616
+msgid "Special"
+msgstr ""
+
+#: inc/template-tags.php:687
+#, php-format
+msgid "%s - Season %s - %s Episodes"
+msgstr ""
+
+#: inc/template-tags.php:720
+msgid "No episodes available"
+msgstr ""
+
+#: inc/template-tags.php:725
+#, php-format
+msgid "Season %s"
+msgstr ""
+
+#: inc/customizer/colors.php:27
+msgid "Default"
+msgstr ""
+
+#: inc/customizer/colors.php:38
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/colors.php:49
+msgid "Blue"
+msgstr ""
+
+#: inc/customizer/colors.php:71
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/colors.php:82
+msgid "Color scheme"
+msgstr ""
+
+#: inc/customizer/colors.php:90
+msgid "Web Background"
+msgstr ""
+
+#: inc/customizer/colors.php:91
+msgid "Content Background"
+msgstr ""
+
+#: inc/customizer/colors.php:92
+msgid "General Color #1"
+msgstr ""
+
+#: inc/customizer/colors.php:93
+msgid "General Color #2"
+msgstr ""
+
+#: inc/customizer/colors.php:94
+msgid "General Color #3"
+msgstr ""
+
+#: inc/customizer/colors.php:95
+msgid "General Color #4"
+msgstr ""
+
+#: inc/customizer/customizer.php:27
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/customizer.php:45 inc/customizer/customizer.php:65
+#: inc/customizer/customizer.php:84 inc/customizer/customizer.php:103
+#: inc/customizer/customizer.php:259 inc/customizer/customizer.php:277
+#: inc/customizer/customizer.php:295 inc/customizer/customizer.php:313
+#: inc/customizer/customizer.php:1190 inc/customizer/customizer.php:1278
+#: inc/customizer/customizer.php:1491
+msgid "Disable"
+msgstr ""
+
+#: inc/customizer/customizer.php:46
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/customizer.php:47
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/customizer.php:60
+msgid "Full Width"
+msgstr ""
+
+#: inc/customizer/customizer.php:66 inc/customizer/customizer.php:85
+#: inc/customizer/customizer.php:104 inc/customizer/customizer.php:276
+#: inc/customizer/customizer.php:294 inc/customizer/customizer.php:312
+#: inc/customizer/customizer.php:1490
+msgid "Enable"
+msgstr ""
+
+#: inc/customizer/customizer.php:79
+msgid "No Boxed Layout"
+msgstr ""
+
+#: inc/customizer/customizer.php:98
+msgid "Less round corners"
+msgstr ""
+
+#: inc/customizer/customizer.php:110
+msgid "General"
+msgstr ""
+
+#: inc/customizer/customizer.php:123
+msgid "Posts per page"
+msgstr ""
+
+#: inc/customizer/customizer.php:136
+msgid "Posts per category"
+msgstr ""
+
+#: inc/customizer/customizer.php:149
+msgid "Posts per tag"
+msgstr ""
+
+#: inc/customizer/customizer.php:162
+msgid "Posts per ABC"
+msgstr ""
+
+#: inc/customizer/customizer.php:175
+msgid "Posts per search"
+msgstr ""
+
+#: inc/customizer/customizer.php:188
+msgid "Posts per related"
+msgstr ""
+
+#: inc/customizer/customizer.php:201
+msgid "Number of movies on index"
+msgstr ""
+
+#: inc/customizer/customizer.php:214
+msgid "Number of series on index"
+msgstr ""
+
+#: inc/customizer/customizer.php:227
+msgid "Number of episodes on index"
+msgstr ""
+
+#: inc/customizer/customizer.php:240
+msgid "Number of seasons on index"
+msgstr ""
+
+#: inc/customizer/customizer.php:253
+msgid "CSS and JS Minified"
+msgstr ""
+
+#: inc/customizer/customizer.php:258 inc/customizer/customizer.php:1191
+#: inc/customizer/customizer.php:1277
+msgid "Enabled"
+msgstr ""
+
+#: inc/customizer/customizer.php:271
+msgid "Show Filter Categories"
+msgstr ""
+
+#: inc/customizer/customizer.php:289
+msgid "Show Related"
+msgstr ""
+
+#: inc/customizer/customizer.php:307
+msgid "Show Search Suggest"
+msgstr ""
+
+#: inc/customizer/customizer.php:325
+msgid "Show Quality"
+msgstr ""
+
+#: inc/customizer/customizer.php:330
+msgid "The last added."
+msgstr ""
+
+#: inc/customizer/customizer.php:331
+msgid "The first added."
+msgstr ""
+
+#: inc/customizer/customizer.php:342
+msgid "Page Movies"
+msgstr ""
+
+#: inc/customizer/customizer.php:355
+msgid "Page Series"
+msgstr ""
+
+#: inc/customizer/customizer.php:368
+msgid "Page Seasons"
+msgstr ""
+
+#: inc/customizer/customizer.php:381
+msgid "Page Episodes"
+msgstr ""
+
+#: inc/customizer/customizer.php:395
+msgid "URL Facebook"
+msgstr ""
+
+#: inc/customizer/customizer.php:408
+msgid "URL Twitter"
+msgstr ""
+
+#: inc/customizer/customizer.php:421
+msgid "URL Google+"
+msgstr ""
+
+#: inc/customizer/customizer.php:434
+msgid "URL Youtube"
+msgstr ""
+
+#: inc/customizer/customizer.php:440
+msgid ""
+"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet "
+"vestibulum ipsum vel laoreet. Donec varius sit amet justo vitae pulvinar. "
+"Morbi varius enim a lorem elementum, quis pretium quam semper. Duis "
+"consectetur quam lorem, nec faucibus tellus elementum quis. Praesent feugiat "
+"ut nibh vel euismod. Vivamus nulla odio, porta id felis sed, malesuada "
+"tempus turpis. Etiam non mauris ac mi efficitur gravida. Morbi tempor metus "
+"sed massa porta tempus. Ut sem felis, ornare nec lorem eget, tempor rhoncus "
+"est. Aliquam eget dui sed leo aliquet ultricies. Suspendisse nec tincidunt "
+"velit. Proin sagittis aliquet gravida. Etiam quam tortor, lobortis nec "
+"volutpat eget, ultricies non turpis. Sed fringilla, lectus id bibendum "
+"tristique, massa odio accumsan dolor, eget laoreet nibh risus ut massa.</p>"
+msgstr ""
+
+#: inc/customizer/customizer.php:447
+msgid "Footer Text"
+msgstr ""
+
+#: inc/customizer/customizer.php:461
+msgid "Code Header"
+msgstr ""
+
+#: inc/customizer/customizer.php:475
+msgid "Code Footer"
+msgstr ""
+
+#: inc/customizer/customizer.php:489
+msgid "Message below player"
+msgstr ""
+
+#: inc/customizer/customizer.php:496
+msgid "SEO"
+msgstr ""
+
+#: inc/customizer/customizer.php:509
+msgid "H1 - HomePage"
+msgstr ""
+
+#: inc/customizer/customizer.php:523 inc/customizer/customizer.php:558
+#: inc/customizer/customizer.php:593 inc/customizer/customizer.php:628
+#: inc/customizer/customizer.php:664 inc/customizer/customizer.php:700
+#: inc/customizer/customizer.php:736 inc/customizer/customizer.php:772
+#: inc/customizer/customizer.php:808 inc/customizer/customizer.php:844
+#: inc/customizer/customizer.php:880 inc/customizer/customizer.php:916
+#: inc/customizer/customizer.php:952 inc/customizer/customizer.php:988
+#: inc/customizer/customizer.php:1024 inc/customizer/customizer.php:1074
+msgid "Tag"
+msgstr ""
+
+#: inc/customizer/customizer.php:544
+msgid "Latest Series - HomePage"
+msgstr ""
+
+#: inc/customizer/customizer.php:579
+msgid "Latest Seasons - HomePage"
+msgstr ""
+
+#: inc/customizer/customizer.php:614
+msgid "Latest Episodes - HomePage"
+msgstr ""
+
+#: inc/customizer/customizer.php:649
+msgid "H1 - Category"
+msgstr ""
+
+#: inc/customizer/customizer.php:653
+msgid "{title} to display the name of the category."
+msgstr ""
+
+#: inc/customizer/customizer.php:685
+msgid "H1 - Tag"
+msgstr ""
+
+#: inc/customizer/customizer.php:689
+msgid "{title} to display the name of the tag."
+msgstr ""
+
+#: inc/customizer/customizer.php:721
+msgid "H1 - Single Movies"
+msgstr ""
+
+#: inc/customizer/customizer.php:725 inc/customizer/customizer.php:761
+#: inc/customizer/customizer.php:1063
+msgid "{title} to display the title of the post."
+msgstr ""
+
+#: inc/customizer/customizer.php:757
+msgid "H1 - Single Series"
+msgstr ""
+
+#: inc/customizer/customizer.php:793
+msgid "H1 - Single Seasons"
+msgstr ""
+
+#: inc/customizer/customizer.php:797
+msgid ""
+"{title} to display the name of the term. - {season} to display the number of "
+"the season."
+msgstr ""
+
+#: inc/customizer/customizer.php:829
+msgid "H1 - Single Episodes"
+msgstr ""
+
+#: inc/customizer/customizer.php:833
+msgid ""
+"{title} to display the name of the term. - {season} to display the number of "
+"the season and {episode} to display the number of the episode."
+msgstr ""
+
+#: inc/customizer/customizer.php:865
+msgid "H1 - Page"
+msgstr ""
+
+#: inc/customizer/customizer.php:869
+msgid "{title} to display the title of the page."
+msgstr ""
+
+#: inc/customizer/customizer.php:901
+msgid "H1 - Letters"
+msgstr ""
+
+#: inc/customizer/customizer.php:905 inc/customizer/customizer.php:941
+#: inc/customizer/customizer.php:977 inc/customizer/customizer.php:1013
+msgid "{title} to display the name of the term."
+msgstr ""
+
+#: inc/customizer/customizer.php:937
+msgid "H1 - Cast"
+msgstr ""
+
+#: inc/customizer/customizer.php:973
+msgid "H1 - Director"
+msgstr ""
+
+#: inc/customizer/customizer.php:1009
+msgid "H1 - Country"
+msgstr ""
+
+#: inc/customizer/customizer.php:1052 inc/customizer/customizer.php:1059
+msgid "Links"
+msgstr ""
+
+#: inc/customizer/customizer.php:1095
+msgid "Tag Titles Related"
+msgstr ""
+
+#: inc/customizer/customizer.php:1116
+msgid "Tag Titles List"
+msgstr ""
+
+#: inc/customizer/customizer.php:1137
+msgid "Tag Titles Slider"
+msgstr ""
+
+#: inc/customizer/customizer.php:1158
+msgid "Tag Titles Carousel"
+msgstr ""
+
+#: inc/customizer/customizer.php:1172
+msgid "Carrousel"
+msgstr ""
+
+#: inc/customizer/customizer.php:1185 inc/customizer/customizer.php:1272
+#: inc/customizer/customizer.php:1485
+msgid "Show"
+msgstr ""
+
+#: inc/customizer/customizer.php:1203 inc/customizer/customizer.php:1290
+msgid "Number of posts"
+msgstr ""
+
+#: inc/customizer/customizer.php:1217 inc/customizer/customizer.php:1304
+msgid "Order by"
+msgstr ""
+
+#: inc/customizer/customizer.php:1222 inc/customizer/customizer.php:1309
+#: inc/widgets/widget-trposts.php:403
+msgid "Random"
+msgstr ""
+
+#: inc/customizer/customizer.php:1223 inc/customizer/customizer.php:1310
+msgid "Last"
+msgstr ""
+
+#: inc/customizer/customizer.php:1224
+msgid "Best rated"
+msgstr ""
+
+#: inc/customizer/customizer.php:1225
+msgid "Most views"
+msgstr ""
+
+#: inc/customizer/customizer.php:1226 inc/customizer/customizer.php:1313
+msgid "Post sticky"
+msgstr ""
+
+#: inc/customizer/customizer.php:1238 inc/customizer/customizer.php:1325
+msgid "Autoplay"
+msgstr ""
+
+#: inc/customizer/customizer.php:1252 inc/customizer/customizer.php:1395
+#: inc/customizer/customizer.php:1545
+msgid "Show quality"
+msgstr ""
+
+#: inc/customizer/customizer.php:1259
+msgid "Slider"
+msgstr ""
+
+#: inc/customizer/customizer.php:1311
+msgid "Best rated (Required WP-PostRatings)"
+msgstr ""
+
+#: inc/customizer/customizer.php:1312
+msgid "Most views (Required WP-PostViews)"
+msgstr ""
+
+#: inc/customizer/customizer.php:1339
+msgid "Show geners"
+msgstr ""
+
+#: inc/customizer/customizer.php:1353 inc/customizer/customizer.php:1615
+msgid "Show director"
+msgstr ""
+
+#: inc/customizer/customizer.php:1367 inc/customizer/customizer.php:1629
+msgid "Show cast"
+msgstr ""
+
+#: inc/customizer/customizer.php:1381 inc/customizer/customizer.php:1531
+msgid "Show rating"
+msgstr ""
+
+#: inc/customizer/customizer.php:1409 inc/customizer/customizer.php:1517
+msgid "Show year"
+msgstr ""
+
+#: inc/customizer/customizer.php:1423 inc/customizer/customizer.php:1573
+msgid "Show views"
+msgstr ""
+
+#: inc/customizer/customizer.php:1437 inc/customizer/customizer.php:1559
+msgid "Show duration"
+msgstr ""
+
+#: inc/customizer/customizer.php:1451
+msgid "Show tag"
+msgstr ""
+
+#: inc/customizer/customizer.php:1465 inc/customizer/customizer.php:1587
+msgid "Show description"
+msgstr ""
+
+#: inc/customizer/customizer.php:1472
+msgid "Info Hover"
+msgstr ""
+
+#: inc/customizer/customizer.php:1503
+msgid "Show title"
+msgstr ""
+
+#: inc/customizer/customizer.php:1601
+msgid "Show categories"
+msgstr ""
+
+#: inc/customizer/customizer.php:1643
+msgid "Show Status (Series)"
+msgstr ""
+
+#: inc/widgets/widget-abc.php:13
+msgid "Search for posts by initial letter."
+msgstr ""
+
+#: inc/widgets/widget-abc.php:16
+msgid "Tr Abc"
+msgstr ""
+
+#: inc/widgets/widget-abc.php:32
+msgid "A-Z"
+msgstr ""
+
+#: inc/widgets/widget-abc.php:71 inc/widgets/widget-ads.php:77
+#: inc/widgets/widget-trfilter.php:283 inc/widgets/widget-trposts.php:391
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/widget-ads.php:13
+msgid "Add advertising on your sidebar."
+msgstr ""
+
+#: inc/widgets/widget-ads.php:16
+msgid "Tr Ads"
+msgstr ""
+
+#: inc/widgets/widget-ads.php:80
+msgid "Content:"
+msgstr ""
+
+#: inc/widgets/widget-ads.php:84
+msgid "Content Mobile:"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:13
+msgid "Advanced search widget."
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:16
+msgid "Tr Search"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:59
+msgid "Years"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:63
+msgid "Write the year"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:83
+msgid "Directors"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:87 inc/widgets/widget-trfilter.php:103
+#: inc/widgets/widget-trfilter.php:119
+msgid "Write the name"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:99
+#: template-parts/single/single-movies.php:52
+#: template-parts/single/single-series.php:49
+msgid "Cast"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:115
+msgid "Countries"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:135
+msgid "Write the category"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:162
+msgid "Write the quality"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:186
+msgid "Languages"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:190
+msgid "Write the language"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:214
+msgid "Servers"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:218
+msgid "Write the server"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:238
+msgid "SEARCH"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:287
+msgid "Display filter gener?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:290
+msgid "Display filter cast?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:293
+msgid "Display filter countries?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:296
+msgid "Display filter directors?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:299
+msgid "Display filter year?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:302
+msgid "Display filter quality?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:305
+msgid "Display filter language?"
+msgstr ""
+
+#: inc/widgets/widget-trfilter.php:308
+msgid "Display filter server?"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:6
+msgid ""
+"Widget to display posts ordered in different ways: past, voted, visited..."
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:7 inc/widgets/widget-trposts.php:16
+msgid "TR Posts"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:394
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:398
+msgid "Order"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:400
+msgid "Latest"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:401
+msgid "Views (Require WP-PostViews)"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:402
+msgid "Best rated (Require WP-PostRatings)"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:407
+msgid "Filter categories"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:431 inc/widgets/widget-trposts.php:447
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:445
+msgid "Design"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:449
+msgid "List"
+msgstr ""
+
+#: inc/widgets/widget-trposts.php:452
+msgid "Box"
+msgstr ""
+
+#: template-parts/content/none.php:11
+msgid "Sorry, we have nothing to show"
+msgstr ""
+
+#: template-parts/content/page.php:9
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/index/seasons.php:44
+#, php-format
+msgid "%s - Episode%s"
+msgstr ""
+
+#: template-parts/index/series.php:44
+#, php-format
+msgid "%s Season%s"
+msgstr ""
+
+#: template-parts/single/single-movies.php:51
+#: template-parts/single/single-series.php:48
+msgid "Info"
+msgstr ""
+
+#: template-parts/single/single-movies.php:57
+#: template-parts/single/single-series.php:54
+msgid "Original title: "
+msgstr ""
+
+#: template-parts/single/single-movies.php:58
+msgid "Release date: "
+msgstr ""
+
+#: template-parts/single/single-movies.php:59
+#: template-parts/single/single-series.php:58
+msgid "Genre: "
+msgstr ""
+
+#: template-parts/single/single-movies.php:60
+#: template-parts/single/single-series.php:59
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/single/single-movies.php:61
+#: template-parts/single/single-series.php:60
+msgid "Directors: "
+msgstr ""
+
+#: template-parts/single/single-movies.php:62
+#: template-parts/single/single-series.php:61
+msgid "Rating: "
+msgstr ""
+
+#: template-parts/single/single-series.php:15
+#, php-format
+msgid "%s Seasons - %s Episodes"
+msgstr ""
+
+#: template-parts/single/single-series.php:55
+msgid "In Production: "
+msgstr ""
+
+#: template-parts/single/single-series.php:56
+msgid "First air date: "
+msgstr ""
+
+#: template-parts/single/single-series.php:57
+msgid "Last air date: "
+msgstr ""
+
+#: template-parts/slider/moved.php:111
+#, php-format
+msgid "Watch %sSerie%s"
+msgstr ""
+
+#: template-parts/slider/moved.php:113
+#, php-format
+msgid "Watch %sMovie%s"
+msgstr ""
