@@ -10,11 +10,10 @@ $link = $type == 1 ? unserialize ( get_post_meta( intval(get_query_var('trid')),
 
 $link = base64_decode( $link['link'] );
 
-$iframe = '';
-
 $a = array( '&amp;amp;lt;', '&amp;amp;quot;', '&amp;amp;gt;', '&amp;lt;', '&amp;quot;', '&amp;gt;', '&lt;', '&quot;', '&gt;' );
 $b = array( '<', '"', '>', '<', '"', '>', '<', '"', '>' );
 $link = str_replace( $a, $b, $link );
+$iframe = $link;
 
 preg_match('#<iframe(.*?)></iframe>#is', html_entity_decode($link), $matches);
 
@@ -59,7 +58,7 @@ if( isset($matshortcode[0]) ) {
     <script type="text/javascript">
         var arrPreroll = "<?php echo TR_GRABBER_PLUGIN_URL . 'player/preload/i9bet.php' ?>";
         var sources = [{
-            file: '<?= $link ?>',
+            file: '',
             type: 'embed',
             label: '1080p',
             default: false
