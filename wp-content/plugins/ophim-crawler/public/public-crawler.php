@@ -145,6 +145,20 @@ class Nguon_Movies_Crawler {
                 }
             }
 
+            // Loại bỏ phim 18+
+            foreach ($movie_data["categories"] as $key => $value) {
+                if ( strpos( $value, 'Phim 18+' ) !== false ) {
+                    $result = array(
+                        'status'   			=> true,
+                        'post_id' 			=> null,
+                        'list_episode' 	=> [],
+                        'msg' => 'Nothing needs updating!'
+                    );
+                    echo json_encode($result);
+                    wp_die();
+                }
+            }
+
             $post_id = $this->insert_movie($movie_data);
 
             if ( $movie_data['tr_post_type'] == 1 ) {
