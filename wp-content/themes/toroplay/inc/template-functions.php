@@ -166,7 +166,7 @@ function tr_backdrop($size='w780', $post_id = NULL) {
     if($url_backdrop!='') {
          echo $backdrop_field;
     }elseif(get_post_meta($post_id, TR_GRABBER_FIELD_BACKDROP_HOTLINK, true)!=''){
-         echo '<img class="TPostBg" src="//image.tmdb.org/t/p/'.$size.''.get_post_meta($post_id, TR_GRABBER_FIELD_BACKDROP_HOTLINK, true).'" alt="'.__('Background', 'toroplay').'">';        
+         echo '<img class="TPostBg" src="'.get_post_meta($post_id, TR_GRABBER_FIELD_BACKDROP_HOTLINK, true).'" alt="'.__('Background', 'toroplay').'">';        
     }else{
         echo '<img class="TPostBg" src="'.get_template_directory_uri().'/img/cnt/w780.png" alt="'.__('Background', 'toroplay').'">';
     }
