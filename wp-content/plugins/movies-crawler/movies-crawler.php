@@ -4,11 +4,11 @@
 * @wordpress-plugin
 * Plugin Name: Movies Crawler
 * Plugin URI: https://nguon.tv
-* Description: Thu thập phim từ NguonTV - Tương thích theme HaLimMovie
+* Description: Thu thập phim từ NguonTV - Tương thích theme ToroPlay
 * Version: 2.0.1
-* Requires PHP: 7.4^
+* Requires PHP: 7.0^
 * Author: Brevis Nguyen
-* Author URI: https://github.com/brevis-ng
+* Author URI: https://github.com/brevis-ng/crawl-nguontv-toroplay
 */
 
 // Protect plugins from direct access. If this file is called directly, abort.
@@ -18,7 +18,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * Currently plugin version.
- * Start at version 1.0.0
+ * Start at version 2.0.1
  */
 define( 'PLUGIN_NAME_VERSION', '2.0.1' );
 
@@ -29,7 +29,7 @@ set_time_limit(0);
 if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
     $version = PLUGIN_NAME_VERSION;
 } else {
-    $version = '1.0.0';
+    $version = '2.0.1';
 }
 define('PLUGIN_NAME', 'movies-crawler');
 define('VERSION', $version);

@@ -143,47 +143,45 @@ class Nguon_Movies_Crawler {
             die();
         }
         $movie_data = $this->refined_data($data['list']);
-        // echo json_encode($movie_data);
-        // wp_die();
 
-        // $args = array(
-		// 	'post_type' => 'series',
-		// 	'posts_per_page' => 1,
-		// 	'meta_query' => array(
-		// 		array(
-		// 			'key' => 'field_title',
-		// 			'value' => $movie_data['org_title'],
-		// 			'compare' => '='
-		// 		)
-		// 	)
-		// );
-        // $wp_query = new WP_Query($args);
-        // if ( $wp_query->have_posts() ) { // Trùng tên phim
-        //     while ($wp_query->have_posts()) {
-        //         $wp_query->the_post();
-        //         global $post;
-        //         $status = get_post_meta($post->ID, 'status', true);
+        $args = array(
+			'post_type' => 'series',
+			'posts_per_page' => 1,
+			'meta_query' => array(
+				array(
+					'key' => 'field_title',
+					'value' => $movie_data['org_title'],
+					'compare' => '='
+				)
+			)
+		);
+        $wp_query = new WP_Query($args);
+        if ( $wp_query->have_posts() ) { // Trùng tên phim
+            while ($wp_query->have_posts()) {
+                $wp_query->the_post();
+                global $post;
+                $status = get_post_meta($post->ID, 'status', true);
                 
-        //         if($status == $movie_data['episode']) { // Tập phim không thay đổi
-        //             $result = array(
-        //                 'code' => 999,
-        //                 'message' => $movie_data['org_title'] . ' : Không cần cập nhật',
-        //             );
-        //             echo json_encode($result);
-        //             wp_die();
-        //         }
+                if($status == $movie_data['episode']) { // Tập phim không thay đổi
+                    $result = array(
+                        'code' => 999,
+                        'message' => $movie_data['org_title'] . ' : Không cần cập nhật',
+                    );
+                    echo json_encode($result);
+                    wp_die();
+                }
 
-        //         $this->links_series($post->ID, $movie_data);
-        //         update_post_meta( $post->ID, 'status', $movie_data['episode'] );
+                $this->links_series($post->ID, $movie_data);
+                update_post_meta( $post->ID, 'status', $movie_data['episode'] );
                 
-        //         $result = array(
-        //             'code' => 1,
-        //             'message' => $movie_data['org_title'] . ' : Cập nhật thành công.',
-        //         );
-        //         echo json_encode($result);
-        //         wp_die();
-        //     }
-        // }
+                $result = array(
+                    'code' => 1,
+                    'message' => $movie_data['org_title'] . ' : Cập nhật thành công.',
+                );
+                echo json_encode($result);
+                wp_die();
+            }
+        }
 
         $post_id = $this->insert_movie($movie_data);
 
@@ -444,12 +442,13 @@ class Nguon_Movies_Crawler {
         }
 
         // Add seasons
+        $slug_seasons = sanitize_title($name . ' ' .  $season_number);
+        $name_seasons = $name . ' - Season ' . $season_number;
+
         $term_seasons = wp_insert_term($name.' '.$season_number, 'seasons' );
         $term_seasons = ! is_wp_error( $term_seasons ) ? intval($term_seasons['term_id']) : intval($term_seasons->error_data['term_exists']);
         wp_set_object_terms($post_id, $term_seasons, 'seasons', true);
 
-        $slug_seasons = sanitize_title($name . ' ' .  $season_number); // {name}-{season}
-        $name_seasons = $name . ' - Season ' . $season_number; //'{name} - Season {season}';
         wp_update_term( $term_seasons, 'seasons', array(
             'name' => $name_seasons,
             'slug' => $slug_seasons
@@ -460,6 +459,8 @@ class Nguon_Movies_Crawler {
             'poster_path_hotlink' => $data['pic_url'],
             'number_of_episodes' => 0,
             'tr_id_post' => $post_id,
+            'name' => 'Season ' . $season_number,
+            'season_number' => $season_number
         );
         foreach ( $array_post_meta as $key => $value ) {
             $meta_value = is_array(get_term_meta( $term_seasons, $key, true )) ? array_map('stripslashes', get_term_meta( $term_seasons, $key, true )) : stripslashes( get_term_meta( $term_seasons, $key, true ) );
@@ -485,11 +486,17 @@ class Nguon_Movies_Crawler {
         foreach ( $data['episodes'] as $key => $episode ) {
             if( isset( $array_episodes ) and !in_array($episode['episode_number'], $array_episodes) ) {
 
-                $name_episodes = $name.' '.$season_number.'x'.$episode['episode_number']; // {name} {season}x{episode}
-                $slug_episodes = sanitize_title($name . '-' . $season_number . 'x' . $episode['episode_number']); // {name}-{season}x{episode}
-                $term_episode = wp_insert_term($name_episodes, 'episodes', array( 'slug' => $slug_episodes ) );
+                $n = $name.' '.$season_number.'x'.$episode['episode_number'];
+                $term_episode = wp_insert_term($n, 'episodes' );
                 $term_episode = ! is_wp_error( $term_episode ) ? intval($term_episode['term_id']) : intval($term_episode->error_data['term_exists']);
                 wp_set_object_terms($post_id, $term_episode, 'episodes', true);
+
+                $name_episodes = $name.' '.$season_number.'x'.$episode['episode_number']; // {name} {season}x{episode}
+                $slug_episodes = sanitize_title($name . '-' . $season_number . 'x' . $episode['episode_number']); // {name}-{season}x{episode}
+                wp_update_term( $term_episode, 'episodes', array(
+                    'name' => $name_episodes,
+                    'slug' => $slug_episodes
+                ));
 
                 $array_post_meta = array(
                     'air_date'              => date('Y-m-d'),
@@ -600,6 +607,11 @@ class Nguon_Movies_Crawler {
                 }
                 list($title, $url) = explode("$", $value);
                 $ep_data[$key]['episode_number'] = $key + 1;
+                if ( empty($url) || strpos($title, 'http') !== false ) {
+                    $url = $title;
+                    $title = 'Tập ' . ($key + 1);
+                }
+                $url = trim(preg_replace('/\\\t/', '', $url));
                 $ep_data[$key]['name'] = trim($title);
                 if ( strpos($url, 'm3u8') !== false ) {
                     $ep_data_m3u8[$key]['link_m3u8'] = base64_encode(stripslashes(esc_textarea($url)));
