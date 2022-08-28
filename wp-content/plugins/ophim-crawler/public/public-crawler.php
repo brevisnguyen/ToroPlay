@@ -202,6 +202,9 @@ class Nguon_Movies_Crawler {
         if($sourcePage["movie"]["type"] == "single") {
             $type = "movies";
             $tr_post_type = 1;
+        } elseif($sourcePage["movie"]["episode_current"] == "Full" && $sourcePage["movie"]["type"] == "hoathinh") {
+            $type = "movies";
+            $tr_post_type = 1;
         } else {
             $type	= "series";
             $tr_post_type = 2;

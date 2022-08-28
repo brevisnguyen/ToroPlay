@@ -72,7 +72,7 @@ if( isset($matshortcode[0]) ) {
             timeToSeek = 0,
             manualSeek = false,
             seekTimeOut, playTimeout, playAds = 0,
-            maxAds = 1;
+            maxAds = 0;
         if (typeof arrPreroll == "undefined") {
             var arrPreroll = [];
             maxAds = 0;

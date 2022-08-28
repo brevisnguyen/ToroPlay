@@ -39,7 +39,7 @@ if ( ! function_exists( 'tr_alphabet' ) ) :
 
 function tr_alphabet() {
 
-    if( get_theme_mod('alphabet', 1) == 1 ){
+    if( get_theme_mod('alphabet', 1) !== 1 ){
     
         $letters = get_categories( array(
             'hide_empty' => false,
