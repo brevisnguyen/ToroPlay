@@ -27,6 +27,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/video.min.js' ?>"></script>
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.ads.min.js' ?>"></script>
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs-preroll-v2.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.hotkeys.min.js' ?>"></script>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/video-js.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-contrib-ads.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-preroll.css' ?>"/>
@@ -55,7 +56,14 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             sources: [{
                 src: ep_link,
                 type: video_type
-            }]
+            }],
+            plugins: {
+                hotkeys: {
+                    volumeStep: 0.1,
+                    seekStep: 10,
+                    enableModifiersForNumbers: false
+                }
+            }
         }
         var player = videojs("videojs", options);
 
@@ -70,7 +78,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             target: '_blank',
             // Thuộc tính video quảng cáo
             allowSkip: true,
-            skipTime: 8, // Số giây quảng cáo tự động tắt
+            skipTime: 5, // Số giây quảng cáo tự động tắt
             adSign: true,
             // Thuộc tính hiển thị
             lang: {
