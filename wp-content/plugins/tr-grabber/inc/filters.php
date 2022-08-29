@@ -159,7 +159,11 @@ add_filter( 'template_include', 'trgrabber_template', 99 );
 function trgrabber_template( $template ) {
 
     if( get_query_var('trembed') != '' and get_query_var('trid') != '' ) {
-	   $template = TR_GRABBER_PLUGIN_DIR.'inc/embed.php';
+        if ( intval(get_query_var('trembed')) == 0 ) {
+            $template = TR_GRABBER_PLUGIN_DIR.'inc/embed_jw.php';
+        } else {
+            $template = TR_GRABBER_PLUGIN_DIR.'inc/embed.php';
+        }
     }
     
     if( get_query_var('trhide') ) {

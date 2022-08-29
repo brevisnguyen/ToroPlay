@@ -6,9 +6,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $type = intval($_GET['trtype']);
 
+$poster = $type == 1 ? get_post_meta( intval(get_query_var('trid')), 'backdrop_hotlink', true ) : get_post_meta(get_term_meta( intval(get_query_var('trid')), 'tr_id_post', true ), 'backdrop_hotlink', true );
+
 $episode = $type == 1 ? unserialize ( get_post_meta( intval(get_query_var('trid')), 'trglinks_'.intval(get_query_var('trembed')), true ) ) : unserialize ( get_term_meta( intval(get_query_var('trid')), 'trglinks_'.intval(get_query_var('trembed')), true ) );
 
 $ep_link = base64_decode( $episode['link'] );
+
+$ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 = embed, 1 = m3u8
 
 ?>
 <!DOCTYPE html>
@@ -20,19 +24,18 @@ $ep_link = base64_decode( $episode['link'] );
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex,nofollow">
     <!-- VideoJS -->
-    <link href="https://vjs.zencdn.net/7.20.2/video-js.css" rel="stylesheet" />
-    <!-- Ads plugin -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs.ads.min.js" integrity="sha512-ff4Rc39SC+LyUOUEKUvQ5VW/BMtzy+p3/zN+zB/VloiEfFpkY4JseoJC2TtwJTnn2PrSsm+dvSW6S4yV6uADUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs-contrib-ads.css" integrity="sha512-0gIqgiX1dWTChdWUl8XGIBDFvLo7aTvmd6FAhJjzWx5bzYsCJTiPJLKqLF3q31IN4Kfrc0NbTO+EthoT6O0olQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Ads plugin -->
-    <!-- VideoJS -->
-    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/jquery.min.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/video.min.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.ads.min.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs-preroll-v2.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/video-js.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-contrib-ads.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-preroll.css' ?>"/>
 </head>
 <body oncontextmenu="return false;">
-    <video id="videojs7x" class="video-js vjs-big-play-centered" controls preload="none" width="100%" height="100%">
-        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+
+    <video id="videojs" class="video-js vjs-big-play-centered" controls preload="auto" width="100%" height="100%">
+        <p class="vjs-no-js">Không hỗ trợ phát video. Vui lòng liên hệ <a href="https://t.me/brevis_ng">Brevis</a> phản ánh, xin cảm ơn.</p>
     </video>
-    <script src="https://vjs.zencdn.net/7.20.2/video.min.js"></script>
 
     <script type="text/javascript">
         var ep_link = "<?php echo $ep_link ?>";
@@ -43,9 +46,10 @@ $ep_link = base64_decode( $episode['link'] );
             type='video/x-matroska';
         }
         var options = {
-            autoplay: 'false',
-            poster: '',
+            autoplay: false,
             fluid: true,
+            poster: '<?php echo $poster ?>',
+            responsive: true,
             aspectRatio: '16:9',
             playbackRates: [0.5, 1, 1.5, 2],
             sources: [{
@@ -53,8 +57,28 @@ $ep_link = base64_decode( $episode['link'] );
                 type: video_type
             }]
         }
-        var player = videojs("videojs7x", options, function onPlayerReady() {
-            this.play();
+        var player = videojs("videojs", options);
+
+        player.preroll({
+            // Source video quảng cáo
+            src: [{
+                type: 'video/mp4',
+                src: 'https://i9dev.live/storage/i9betads.mp4',
+            }],
+            // URL đích khi người dùng click vào quảng cáo
+            href: 'https://github.com/brevis-ng',
+            target: '_blank',
+            // Thuộc tính video quảng cáo
+            allowSkip: true,
+            skipTime: 8, // Số giây quảng cáo tự động tắt
+            adSign: true,
+            // Thuộc tính hiển thị
+            lang: {
+                'skip': 'Bỏ qua',
+                'skip in': 'Bỏ qua trong ',
+                'advertisement': 'Quảng cáo',
+                'video start in': 'Phim sẽ bắt đầu trong: ',
+            }
         });
     </script>
 </body>
