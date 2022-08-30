@@ -419,7 +419,8 @@ function fvm_process_page($html) {
 				}
 				
 				# preload
-				$htmlcssheader[0] = '<link id="fvm-fonts" rel="stylesheet" href="'.$css_fonts_url.'" media="fonts" onload="if(fvmuag()){this.media=\'all\'}" />';
+				$htmlcssheader[0] = '<link rel="preload" fetchpriority="low" id="fvmfonts-css" href="'.$css_fonts_url.'" as="style" media="all" onload="this.rel=\'stylesheet\';this.onload=null">';
+				
 			
 		}		
 		# END OPTIMIZED FONT DELIVERY
@@ -574,7 +575,7 @@ function fvm_process_page($html) {
 									if(isset($scripts_duplicate_check[$uid])) {
 										$tag->outertext = '';
 									} else { 
-										$tag->type = 'fvm-script-delay';
+										$tag->type = 'fvmdelay';
 										$scripts_duplicate_check[$uid] = $uid;
 									}					
 									
@@ -839,7 +840,7 @@ function fvm_process_page($html) {
 								if(stripos($js, $b) !== false || stripos($js, $b) !== false) {
 									
 									# delay
-									$tag->type = 'fvm-script-delay';
+									$tag->type = 'fvmdelay';
 									
 									# minified
 									if(!empty($js)) {
@@ -861,14 +862,13 @@ function fvm_process_page($html) {
 							foreach ($arr as $b) {
 								if((stripos($js, $b) !== false || stripos($js, $b) !== false) && !isset($tag->src)) {
 									
-									# defer
-									$tag->type = 'module';
-									
-									# html comments are not supported inside module scripts
-									if(!empty($js)) {
-										$tag->innertext = preg_replace('/<!--(.|\s)*?-->/ui', '', $js);
+									# defer and rawurlencode
+									# jquery document ready needs to execute before deferred scripts
+									if(!empty($js) && stripos($js, ').ready(') === false) {
+										$tag->src = 'data:application/javascript,'.rawurlencode($js);					
+										$tag->innertext = '';
 									}
-									
+																		
 									# unset
 									unset($allscripts[$k]);
 									continue 2;
@@ -1047,7 +1047,7 @@ function fvm_process_page($html) {
 	
 	# add fvm_footer scripts, if enabled
 	if(fvm_can_minify_js()) { 
-		$fm = fvm_add_delay_scripts_logic($fm);
+		$fm = fvm_add_footer_function($fm);
 	}	
 			
 	# cleanup leftover markers

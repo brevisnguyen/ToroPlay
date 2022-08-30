@@ -20,19 +20,19 @@ if ( ! defined( 'WPINC' ) ) {
  * Currently plugin version.
  * Start at version 2.0.1
  */
-define( 'PLUGIN_NAME_VERSION', '2.0.1' );
+define( 'OPHIM_PLUGIN_VERSION', '2.0.1' );
 
 /**
  * The unique identifier of this plugin.
  */
 set_time_limit(0);
-if ( defined( 'PLUGIN_NAME_VERSION' ) ) {
-    $version = PLUGIN_NAME_VERSION;
+if ( defined( 'OPHIM_PLUGIN_VERSION' ) ) {
+    $version = OPHIM_PLUGIN_VERSION;
 } else {
     $version = '2.0.1';
 }
-define('PLUGIN_NAME', 'movies-crawler');
-define('VERSION', $version);
+define('OPHIM_NAME', 'ophim-crawler');
+define('OPHIM_VERSION', $version);
 
 /**
  * The code that runs during plugin activation.
@@ -87,9 +87,9 @@ require_once plugin_dir_path( __FILE__ ) . 'public/public-crawler.php';
 function run_plugin_name() {
     add_action('admin_menu', 'movies_crawler_add_menu');
 
-    $plugin_admin = new Nguon_Movies_Crawler( PLUGIN_NAME, VERSION );
-    add_action('in_admin_header', array($plugin_admin, 'enqueue_scripts'));
-    add_action('in_admin_header', array($plugin_admin, 'enqueue_styles'));
+    $plugin_admin = new OPhim_Movies_Crawler( OPHIM_NAME, OPHIM_VERSION );
+    add_action('in_admin_header', array($plugin_admin, 'enqueue_ophim_scripts'));
+    add_action('in_admin_header', array($plugin_admin, 'enqueue_ophim_styles'));
 
     add_action('wp_ajax_crawl_ophim_page', array($plugin_admin, 'crawl_ophim_page'));
     add_action('wp_ajax_crawl_ophim_movies', array($plugin_admin, 'crawl_ophim_movies'));

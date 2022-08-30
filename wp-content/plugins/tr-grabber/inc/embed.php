@@ -28,6 +28,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.ads.min.js' ?>"></script>
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs-preroll-v2.js' ?>"></script>
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.hotkeys.min.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/jquery.min.js' ?>"></script>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/video-js.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-contrib-ads.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-preroll.css' ?>"/>
@@ -67,6 +68,16 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
         }
         var player = videojs("videojs", options);
 
+        player.on('adend', function() {
+            console.log('in loadedmetadata');
+            player.addRemoteTextTrack({
+                src: "<?php echo TR_GRABBER_PLUGIN_URL . 'player/preload/title.vtt' ?>",
+                srclang: 'en',
+                label: 'english',
+                kind: 'subtitles'
+            }, true);
+        });
+
         player.preroll({
             // Source video quảng cáo
             src: [{
@@ -78,7 +89,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             target: '_blank',
             // Thuộc tính video quảng cáo
             allowSkip: true,
-            skipTime: 5, // Số giây quảng cáo tự động tắt
+            skipTime: 1, // Số giây quảng cáo tự động tắt
             adSign: true,
             // Thuộc tính hiển thị
             lang: {

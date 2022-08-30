@@ -536,6 +536,11 @@ function fvm_generate_min_url($url, $tkey, $type, $code) {
 			$file = $ch_info['ch_dir'] . DIRECTORY_SEPARATOR . $filename;
 			$public = $ch_info['ch_url'] . '/' .$filename;
 			
+			# enforce https on https requests
+			if(parse_url($public, PHP_URL_SCHEME) != fvm_get_scheme()) {
+				$public = str_replace('http://', 'https://', $public);
+			}
+			
 			# php
 			if(!file_exists($file) || (file_exists($file) && filemtime($file) < $tvers)) { file_put_contents($file, $code); }
 			if(file_exists($file)) { return $public; }
@@ -2080,13 +2085,6 @@ function fvm_disable_emojis() {
 }
 
 
-# stop slow ajax requests for bots
-function fvm_ajax_optimizer() {
-	if(isset($_SERVER['HTTP_USER_AGENT']) && (defined('DOING_AJAX') && DOING_AJAX) || (function_exists('is_ajax') && is_ajax()) || (function_exists('wp_doing_ajax') && wp_doing_ajax())){
-		if (preg_match('/'.implode('|', array('x11.*ox\/54', 'id\s4.*us.*ome\/62', 'oobo', 'ight', 'tmet', 'eadl', 'ngdo', 'PTST')).'/i', $_SERVER['HTTP_USER_AGENT'])){ echo '0'; exit(); }
-	}
-}
-
 # rewrite assets to cdn
 function fvm_rewrite_assets_cdn($html) {
 	
@@ -2168,11 +2166,13 @@ function fvm_maybe_download($url) {
 
 # add our function in the header
 function fvm_add_header_function($html) {
-	
-	# create function
-	$lst = array('x11.*ox\/54', 'id\s4.*us.*ome\/62', 'oobo', 'ight', 'tmet', 'eadl', 'ngdo', 'PTST');
-	$fvmf = '<script data-cfasync="false">function fvmuag(){var e=navigator.userAgent;if(e.match(/'.implode('|', $lst).'/i))return!1;if(e.match(/x11.*me\/86\.0/i)){var r=screen.width;if("number"==typeof r&&1367==r)return!1}return!0}</script>';
-	
+
+# based on wp rocket delay js feature
+$fvmf.= <<<'EOF'
+<script data-cfasync="false">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]iebrowser/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?iebrowser=1"}else{document.location.href=href.replace("#","?iebrowser=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&iebrowser=1"}else{document.location.href=href.replace("#","&iebrowser=1#")}}}}</script>
+<script data-cfasync="false">class FVMLoader{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach(t=>window.addEventListener(t,e.userEventListener,e.eventOptions))}_removeUserInteractionListener(e){this.triggerEvents.forEach(t=>window.removeEventListener(t,e.userEventListener,e.eventOptions))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._runAllDelayedCSS(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("wpr-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=fvmdelay]").forEach(e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)})}_runAllDelayedCSS(){document.querySelectorAll("link[rel=fvmdelay]").forEach(e=>{e.setAttribute("rel","stylesheet")})}async _transformScript(e){return await this._requestAnimFrame(),new Promise(t=>{const n=document.createElement("script");let r;[...e.attributes].forEach(e=>{let t=e.nodeName;"type"!==t&&("data-type"===t&&(t="type",r=e.nodeValue),n.setAttribute(t,e.nodeValue))}),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)})}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"wpr-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(r){e["wpr"+t]=n=r}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("DOMContentLoaded2",()=>t.bind(document)(n))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map(e=>"load"===e||0===e.indexOf("load.")?"wpr-jquery-load":e).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]})}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("DOMContentLoaded2")),await this._requestAnimFrame(),window.dispatchEvent(new Event("DOMContentLoaded2")),await this._requestAnimFrame(),document.dispatchEvent(new Event("wpr-readystatechange")),await this._requestAnimFrame(),document.wpronreadystatechange&&document.wpronreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("wpr-load")),await this._requestAnimFrame(),window.wpronload&&window.wpronload(),await this._requestAnimFrame(),this.allJQueries.forEach(e=>e(window).trigger("wpr-jquery-load")),window.dispatchEvent(new Event("wpr-pageshow")),await this._requestAnimFrame(),window.wpronpageshow&&window.wpronpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,r=document.createRange(),i=n.parentElement;let a=e.get(n);void 0===a&&(a=n.nextSibling,e.set(n,a));const s=document.createDocumentFragment();r.setStart(s,0),s.appendChild(r.createContextualFragment(t)),i.insertBefore(s,a)}}async _requestAnimFrame(){return new Promise(e=>requestAnimationFrame(e))}static run(){const e=new FVMLoader(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}FVMLoader.run();</script>
+EOF;
+
 	# remove duplicates
 	if(stripos($html, $fvmf) !== false) { 
 		$html = str_ireplace($fvmf, '', $html); 
@@ -2184,27 +2184,21 @@ function fvm_add_header_function($html) {
 }
 
 # add lazy load library
-function fvm_add_delay_scripts_logic($html) { 
+function fvm_add_footer_function($html) { 
 
-# based on v2.0.0: https://github.com/shinsenter/defer.js
-# delay to interaction
-$scripts = <<<'EOF'
-<script type='text/javascript' id='fvm-delayjs' data-cfasync='false'>
-!function(k,e,x){function r(d,a,g,b){return b=(a?e.getElementById(a):t)||e.createElement(d||"SCRIPT"),a&&(b.id=a),g&&(b.onload=g),b}function u(d){f(function(a){a=[].slice.call(e.querySelectorAll(d));(function v(b,c){if(b=a.shift()){b.parentNode.removeChild(b);var l=b,m,n=void 0;var p=r(l.nodeName);var q=0;for(m=l.attributes;q<m.length;q++)"type"!=(n=m[q]).name&&p.setAttribute(n.name,n.value);(c=(p.text=l.text,p)).src&&!c.hasAttribute("async")?(c.onload=c.onerror=v,e.head.appendChild(c)):(e.head.appendChild(c),
-v())}})()})}var f,t,h=[],w=/p/.test(e.readyState);Function();(f=function(d,a){w?x(d,a):h.push(d,a)}).all=u;f.js=function(d,a,g,b){f(function(c){(c=r(t,a,b)).src=d;e.head.appendChild(c)},g)};k.addEventListener("onpageshow"in k?"pageshow":"load",function(){for(w=!u();h[0];)f(h.shift(),h.shift())});k.Defer=f}(this,document,setTimeout);
-const userInteractionEvents=["mouseover","keydown","touchstart","touchmove","wheel"];userInteractionEvents.forEach(function(event){window.addEventListener(event,triggerScriptLoader,{passive:!0})});function triggerScriptLoader(){fvmloadscripts();userInteractionEvents.forEach(function(event){window.removeEventListener(event,triggerScriptLoader,{passive:!0})})}function fvmloadscripts(){Defer.all('script[type="fvm-script-delay"]')};
-</script>
-EOF;
+# for further development
+#$scripts = '';
 
 # add code
-return str_replace('<!-- h_footer_fvm_scripts -->', '<!-- h_footer_fvm_scripts -->' . $scripts, $html);
+#return str_replace('<!-- h_footer_fvm_scripts -->', '<!-- h_footer_fvm_scripts -->' . $scripts, $html);
 
 }
 
 
 # get the domain name
 function fvm_get_scheme() {
-	if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') { return 'https'; }
+	if(isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) === 'on') { return 'https'; }
+	if(isset($_SERVER['HTTPS']) && '1' == $_SERVER['HTTPS']) { return 'https'; }
 	if(isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443) { return 'https'; }
 	if(isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') { return 'https'; }
 	return 'http';

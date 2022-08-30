@@ -6,7 +6,7 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  */
-class Nguon_Movies_Crawler {
+class OPhim_Movies_Crawler {
     private $plugin_name;
     private $version;
 
@@ -24,14 +24,14 @@ class Nguon_Movies_Crawler {
     /**
      * Register the JavaScript for the public-facing side of the site.
      */
-    public function enqueue_scripts() {
+    public function enqueue_ophim_scripts() {
         wp_enqueue_script( $this->plugin_name . 'mainjs', plugin_dir_url( __FILE__ ) . 'js/main.js', array( 'jquery' ), $this->version, false );
     }
 
     /**
      * Register the stylesheets for the public-facing side of the site.
      */
-    public function enqueue_styles() {
+    public function enqueue_ophim_styles() {
         wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/style.css', array(), $this->version, 'all' );
     }
 
