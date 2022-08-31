@@ -92,6 +92,7 @@ function episodes_edit_form_fields($tag) {
     $title = __('Poster', 'tr-grabber');
     $image = get_term_meta( $term_id, 'poster_path', true ) == '' ? '' : get_term_meta( $term_id, 'still_path', true );
     $image_url = get_term_meta( $term_id, 'still_path', true ) == '' ? '' : '<img src="'.wp_get_attachment_image_src(get_term_meta( $term_id, 'still_path', true ), 'medium')[0].'" alt="'.__('image', 'tr-grabber').'">';
+    $subtitles_url = get_term_meta( $term_id, 'subtitles_url', true ) == '' ? '' : get_term_meta( $term_id, 'subtitles_url', true );
     $image_hotlink = get_term_meta( $term_id, 'still_path_hotlink', true ) == '' ? '' : get_term_meta( $term_id, 'still_path_hotlink', true );
     $display = $image == '' ? ' style="display:none"' : '';
     $name = get_term_meta($term_id, 'name', true) == '' ? '' : get_term_meta($term_id, 'name', true);
@@ -155,6 +156,18 @@ function episodes_edit_form_fields($tag) {
             <input id="tr-grabber-media-content" name="image" type="hidden" value="<?php echo $image; ?>">
             <button data-title="<?php echo $title; ?>" data-button="<?php echo $label_use; ?>" data-id="<?php echo $term_id; ?>" data-postid="0" type="button" class="button button-primary tr-grabber-media-tax"><?php _e('Upload Image', 'tr-grabber'); ?></button>
             <button<?php echo $display; ?> type="button" class="button button-primary trgrabber-media-tax-delete tr-rmv"><span class="dashicons dashicons-no-alt"></span></button>
+        </div>
+    </td>
+</tr>
+
+<tr class="form-field term-image-wrap">
+    <th scope="row" valign="top">
+        <label><?php _e('Subtitles', 'tr-grabber'); ?></label>  
+    </th>
+    <td>        
+        <div class="term-image-wrap">
+            <div><?php echo $subtitles_url; ?></div>
+            <input class="tr-grabber-media" name="subtitles_url" type="text" value="<?php echo $subtitles_url; ?>" placeholder="<?php _e('Subtitles url', 'tr-grabber'); ?>">
         </div>
     </td>
 </tr>
@@ -349,6 +362,22 @@ function save_episodes_custom_meta( $term_id ) {
 add_action( 'create_episodes', 'save_episodes_custom_meta', 10, 2 );
 
 function save_episodesedit_custom_meta( $term_id ) {
+
+    if ( isset( $_POST['subtitles_url'] ) ) {
+
+        $new_subtitles_value = ( isset( $_POST['subtitles_url'] ) ? ( $_POST['subtitles_url'] ) : '' );
+        $meta_subtitles = get_term_meta( $term_id, 'subtitles_url', true ) == '' ? '' : get_term_meta( $term_id, 'subtitles_url', true );
+
+        if ( $new_subtitles_value && '' == $meta_subtitles ){
+            add_term_meta( $term_id, 'subtitles_url', $new_subtitles_value, true );
+        }
+        elseif ( $new_subtitles_value && $new_subtitles_value != $meta_subtitles ){
+            update_term_meta( $term_id, 'subtitles_url', $new_subtitles_value );
+        }
+        elseif ( '' == $new_subtitles_value && $meta_subtitles ){
+            delete_term_meta( $term_id, 'subtitles_url', $meta_subtitles );
+        }
+    }
     
 	if ( isset( $_POST['image_hotlink'] ) ) {
         

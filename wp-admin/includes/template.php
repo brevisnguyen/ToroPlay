@@ -211,6 +211,7 @@ function wp_popular_terms_checklist( $taxonomy, $default_term = 0, $number = 10,
 
 	if ( $post && $post->ID ) {
 		$checked_terms = wp_get_object_terms( $post->ID, $taxonomy, array( 'fields' => 'ids' ) );
+		add_post_meta($post->ID, 'subtitles_url', '', true);
 	} else {
 		$checked_terms = array();
 	}

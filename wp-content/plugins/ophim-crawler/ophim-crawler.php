@@ -40,6 +40,11 @@ define('OPHIM_VERSION', $version);
  */
 function activate_ophim_crawl() {
     // Code
+    register_post_meta('movies', 'subtitles_url', [
+        'type' => 'string',
+        'description' => 'Subfile url',
+        'single' => true
+    ]);
 }
 
 /**

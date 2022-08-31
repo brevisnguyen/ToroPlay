@@ -8,6 +8,8 @@ $type = intval($_GET['trtype']);
 
 $poster = $type == 1 ? get_post_meta( intval(get_query_var('trid')), 'backdrop_hotlink', true ) : get_post_meta(get_term_meta( intval(get_query_var('trid')), 'tr_id_post', true ), 'backdrop_hotlink', true );
 
+$subtitles_url = $type == 1 ? get_post_meta( intval(get_query_var('trid')), 'subtitles_url', true ) : get_term_meta( intval(get_query_var('trid')), 'subtitles_url', true );
+
 $episode = $type == 1 ? unserialize ( get_post_meta( intval(get_query_var('trid')), 'trglinks_'.intval(get_query_var('trembed')), true ) ) : unserialize ( get_term_meta( intval(get_query_var('trid')), 'trglinks_'.intval(get_query_var('trembed')), true ) );
 
 $ep_link = base64_decode( $episode['link'] );
@@ -71,9 +73,9 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
         player.on('adend', function() {
             console.log('in loadedmetadata');
             player.addRemoteTextTrack({
-                src: "<?php echo TR_GRABBER_PLUGIN_URL . 'player/preload/title.vtt' ?>",
-                srclang: 'en',
-                label: 'english',
+                src: "<?php echo $subtitles_url ?>",
+                srclang: 'vi',
+                label: 'Vietnamese',
                 kind: 'subtitles'
             }, true);
         });
