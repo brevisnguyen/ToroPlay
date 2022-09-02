@@ -66,6 +66,58 @@
             <div class="TPostBg Objf"><?php tr_backdrop('w780', $post->ID); ?></div>
         </div>
         <!--</MovieInfo>-->
+        <!--<RelatedMovieList>-->
+        <?php
+        $cat = get_the_category($post->ID);
+        foreach ($cat as &$value) $list[]= $value->term_id;
+        $list = isset($list) ? implode(',', $list) : '';
+
+        global $query_series, $wp_query;
+
+        $paged = isset($wp_query->query['paged']) ?  $wp_query->query['paged'] : get_query_var('paged');
+
+        $query_series = new WP_Query( array(
+            'post_type' => 'series',
+            'paged' => $paged,
+            'cat' => $list,
+        ) );
+
+        if ( $query_series->have_posts() ) {
+        ?>
+        <section>
+            <div class="Top">
+                <?php echo '<'.get_theme_mod( 'tp_homepagetag', 'h1' ).' class="Title"' .'>'.get_theme_mod('tp_related', __('Related', 'toroplay')).'</'.get_theme_mod( 'tp_homepagetag', 'h1' ).'>' ?>
+                <?php tr_viewmore('series'); ?>
+            </div>
+            <ul<?php tr_content_class(2, "MovieList NoLmtxt Rows AX A06 B04 C03"); ?>>
+                <?php
+                    // Start the loop.
+                    while ( $query_series->have_posts() ) {
+                        $query_series->the_post();
+                ?>
+                <!--<TPostMv>-->
+                <li class="TPostMv">
+                    <article id="post-<?php the_ID(); ?>" class="TPost C">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="Image"><figure class="Objf TpMvPlay AAIco-play_arrow"><?php echo tr_theme_img(get_the_ID(), 'thumbnail', get_the_title()); ?></figure></div>
+                            <?php tr_title( 'titlelist', 'Title', true, get_the_title() ); ?>
+                            <?php toroplay_entry_header($show_rating=false, $show_year=2, $show_quality=false, $show_runtime=false, $show_views=false, $show_type=false, $single=true); ?>
+                        </a>
+                        <?php tr_hover(FALSE); ?>
+                    </article>
+                </li>
+                <!--</TPostMv>-->
+                <?php                                    
+                    // End the loop.
+                    }
+                    wp_reset_postdata();
+                ?>
+
+            </ul>
+                
+        </section>
+        <?php } ?>
+        <!--</RelatedMovieList>-->
 
         <?php
         // If comments are open or we have at least one comment, load up the comment template.

@@ -83,6 +83,8 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+// define( 'WP_HOME', 'https://ab99-180-232-113-168.ap.ngrok.io' );
+// define( 'WP_SITEURL', 'https://ab99-180-232-113-168.ap.ngrok.io' );
 
 
 /* That's all, stop editing! Happy publishing. */

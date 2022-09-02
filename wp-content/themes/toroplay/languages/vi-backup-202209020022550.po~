@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ToroPlay\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-26 19:55+0200\n"
-"PO-Revision-Date: 2022-08-28 18:06+0000\n"
+"PO-Revision-Date: 2022-09-01 20:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.2; wp-6.0.1"
+"X-Loco-Version: 2.6.2; wp-6.0.2"
 
 #: 404.php:16
 #, php-format
@@ -519,7 +519,7 @@ msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2645
 msgid "Status"
-msgstr ""
+msgstr "Trạng thái"
 
 #: inc/class-tgm-plugin-activation.php:2694
 #, php-format
@@ -648,7 +648,7 @@ msgstr ""
 #: inc/filters.php:25 inc/customizer/customizer.php:1038
 #: inc/customizer/customizer.php:1045
 msgid "Related"
-msgstr ""
+msgstr "Phim liên quan"
 
 #: inc/filters.php:46
 msgid "This theme requires TR Grabber plugin activation to work."
@@ -730,11 +730,11 @@ msgstr ""
 
 #: inc/template-functions.php:224 inc/widgets/widget-trposts.php:433
 msgid "Movies"
-msgstr ""
+msgstr "Phim lẻ"
 
 #: inc/template-functions.php:225 inc/widgets/widget-trposts.php:436
 msgid "Series"
-msgstr ""
+msgstr "Phim bộ"
 
 #: inc/template-functions.php:278 inc/template-functions.php:290
 msgid "Close"
@@ -878,7 +878,7 @@ msgstr ""
 #: inc/template-tags.php:250
 #, php-format
 msgid "%s Episodes"
-msgstr ""
+msgstr "%s Tập"
 
 #: inc/template-tags.php:454
 #, php-format
@@ -895,16 +895,16 @@ msgstr ""
 
 #: inc/template-tags.php:606 inc/template-tags.php:621
 msgid "Season"
-msgstr ""
+msgstr "Phần"
 
 #: inc/template-tags.php:606
 msgid "Episodes"
-msgstr ""
+msgstr "Tập"
 
 #: inc/template-tags.php:612
 #, php-format
 msgid "Season %s %sEp.%s"
-msgstr ""
+msgstr "Phần %s %sEp.%s"
 
 #: inc/template-tags.php:616
 msgid "Special"
@@ -922,7 +922,7 @@ msgstr ""
 #: inc/template-tags.php:725
 #, php-format
 msgid "Season %s"
-msgstr ""
+msgstr "Phần %s"
 
 #: inc/customizer/colors.php:27
 msgid "Default"
@@ -1581,7 +1581,7 @@ msgstr "%s - Tập%s"
 #: template-parts/index/series.php:44
 #, php-format
 msgid "%s Season%s"
-msgstr ""
+msgstr "%s Phần"
 
 #: template-parts/single/single-movies.php:51
 #: template-parts/single/single-series.php:48
@@ -1620,11 +1620,11 @@ msgstr "Đánh giá"
 #: template-parts/single/single-series.php:15
 #, php-format
 msgid "%s Seasons - %s Episodes"
-msgstr ""
+msgstr "%s Phần - %s Tập"
 
 #: template-parts/single/single-series.php:55
 msgid "In Production: "
-msgstr ""
+msgstr "Đang sản xuất: "
 
 #: template-parts/single/single-series.php:56
 msgid "First air date: "
@@ -1637,9 +1637,9 @@ msgstr ""
 #: template-parts/slider/moved.php:111
 #, php-format
 msgid "Watch %sSerie%s"
-msgstr ""
+msgstr "Xem %sphim%s"
 
 #: template-parts/slider/moved.php:113
 #, php-format
 msgid "Watch %sMovie%s"
-msgstr ""
+msgstr "Xem %sphim%s"
