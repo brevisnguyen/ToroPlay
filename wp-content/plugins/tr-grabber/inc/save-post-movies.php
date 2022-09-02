@@ -178,9 +178,9 @@ function save_post_movies($post_id) {
             
             TR_GRABBER_FIELD_BACKDROP => isset($backdrop_id) ? $backdrop_id : '',
             
-            TR_GRABBER_FIELD_BACKDROP_HOTLINK => isset($grabber['backdrop_path']) ? $grabber['backdrop_path'] : '',
+            TR_GRABBER_FIELD_BACKDROP_HOTLINK => isset($grabber['backdrop_path']) ? esc_url_raw( 'https://image.tmdb.org/t/p/original/'.$grabber['poster_path'] ) : '',
             
-            TR_GRABBER_POSTER_HOTLINK => isset($grabber['poster_path']) ? $grabber['poster_path'] : '',
+            TR_GRABBER_POSTER_HOTLINK => isset($grabber['poster_path']) ? esc_url_raw( 'https://image.tmdb.org/t/p/original/'.$grabber['poster_path'] ) : '',
             
         );
                 

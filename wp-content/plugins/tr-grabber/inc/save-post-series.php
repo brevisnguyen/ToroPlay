@@ -115,9 +115,9 @@ function save_post_series($post_id) {
             
             TR_GRABBER_FIELD_STATUS => isset($grabber['status']) ? $grabber['status'] : '',
             
-            TR_GRABBER_POSTER_HOTLINK => isset($grabber['poster_path']) ? $grabber['poster_path'] : '',
+            TR_GRABBER_POSTER_HOTLINK => isset($grabber['poster_path']) ? esc_url_raw( 'http://image.tmdb.org/t/p/original/'.$grabber['poster_path'] ) : '',
             
-            TR_GRABBER_FIELD_BACKDROP_HOTLINK => isset($grabber['backdrop_path']) ? $grabber['backdrop_path'] : '',
+            TR_GRABBER_FIELD_BACKDROP_HOTLINK => isset($grabber['backdrop_path']) ? esc_url_raw( 'http://image.tmdb.org/t/p/original/'.$grabber['poster_path'] ) : '',
             
             TR_GRABBER_FIELD_DATE => isset($grabber['first_air_date']) ? $grabber['first_air_date'] : '',
             
