@@ -199,9 +199,11 @@ class OPhim_Movies_Crawler {
 	 */
     private function create_data($sourcePage, $url, $ophim_id, $ophim_update_time)
     {
+        $arrCat = [];
         if($sourcePage["movie"]["type"] == "single") {
             $type = "movies";
             $tr_post_type = 1;
+            array_push($arrCat, "Phim Lẻ");
         } elseif($sourcePage["movie"]["episode_current"] == "Full" && $sourcePage["movie"]["type"] == "hoathinh") {
             $type = "movies";
             $tr_post_type = 1;
@@ -210,18 +212,17 @@ class OPhim_Movies_Crawler {
             $tr_post_type = 2;
         }
     
-        $arrCat = [];
         foreach ($sourcePage["movie"]["category"] as $key => $value) {
             array_push($arrCat, $value["name"]);
         }
         if($sourcePage["movie"]["chieurap"] == true) {
             array_push($arrCat, "Chiếu Rạp");
-        }
-        if($sourcePage["movie"]["type"] == "hoathinh") {
+        } elseif($sourcePage["movie"]["type"] == "hoathinh") {
             array_push($arrCat, "Hoạt Hình");
-        }
-        if($sourcePage["movie"]["type"] == "tvshows") {
+        } elseif($sourcePage["movie"]["type"] == "tvshows") {
             array_push($arrCat, "TV Shows");
+        } elseif($sourcePage["movie"]["type"] == "series") {
+            array_push($arrCat, "Phim Bộ");
         }
     
         $arrCountry 	= [];

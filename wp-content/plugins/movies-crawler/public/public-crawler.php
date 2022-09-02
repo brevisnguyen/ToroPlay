@@ -208,15 +208,22 @@ class Nguon_Movies_Crawler {
     private function refined_data($array_data)
     {
         foreach ($array_data as $key => $data) {
-            if($data['type_id'] == 1) {
+            $categories = [];
+            if ($data['type_id'] == 1) {
                 $type = "movies";
                 $duration = empty($data['vod_weekday']) ? '0h 0m' : $data['vod_weekday'];
                 $tr_post_type = 1;
             } else {
                 $type	= "series";
                 $tr_post_type = 2;
+                if ($data['type_id_1'] == 2) {
+                    array_push($categories, 'Phim Bộ');
+                }
+                if ($data['type_id'] == 3 && $data['type_id_1'] == 0) {
+                    $data['type_name'] = 'TV Shows';
+                }
             }
-            $categories = array_merge($this->format_text($data['type_name']), $this->format_text($data['vod_class']));
+            $categories = array_merge($categories, $this->format_text($data['type_name']), $this->format_text($data['vod_class']));
             $tags = [];
             array_push($tags, sanitize_text_field($data['vod_name']));
             $tags = array_merge($tags, $this->format_text($data['vod_class']));
@@ -287,7 +294,7 @@ class Nguon_Movies_Crawler {
             'field_runtime' => $data['duration'],
             'tr_post_type' => $data['tr_post_type'],
             'poster_hotlink' => $data['pic_url'],
-            'backdrop_hotlink' => 'https://www.themoviedb.org/t/p/original/5wNCVuZrR64t9DgpGk82z7vfLJt.jpg',
+            'backdrop_hotlink' => 'https://www.themoviedb.org/t/p/original/zQ3W1RXwr7UAXgwTdcDqO7fJj1j.jpg',
             'letters' => $data['letters'],
         );
         if( isset($post_meta_movies) ) {
