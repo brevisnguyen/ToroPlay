@@ -32,12 +32,13 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/videojs.hotkeys.min.js' ?>"></script>
     <script type="text/javascript" src="<?php echo TR_GRABBER_PLUGIN_URL . 'player/js/jquery.min.js' ?>"></script>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/video-js.css' ?>"/>
+    <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-fantasy.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-contrib-ads.css' ?>"/>
     <link rel="stylesheet" href="<?php echo TR_GRABBER_PLUGIN_URL . 'player/css/videojs-preroll.css' ?>"/>
 </head>
 <body oncontextmenu="return false;">
 
-    <video id="videojs" class="video-js vjs-big-play-centered" controls preload="auto" width="100%" height="100%">
+    <video id="videojs" class="video-js vjs-theme-fantasy" controls preload="auto" width="100%" height="100%">
         <p class="vjs-no-js">Không hỗ trợ phát video. Vui lòng liên hệ <a href="https://t.me/brevis_ng">Brevis</a> phản ánh, xin cảm ơn.</p>
     </video>
 
