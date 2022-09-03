@@ -56,7 +56,6 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             poster: '<?php echo $poster ?>',
             responsive: true,
             aspectRatio: '16:9',
-            playbackRates: [0.5, 1, 1.5, 2],
             sources: [{
                 src: ep_link,
                 type: video_type
@@ -72,15 +71,60 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
         var player = videojs("videojs", options);
 
         player.on('adend', function() {
-            console.log('in loadedmetadata');
-            player.addRemoteTextTrack({
-                src: "<?php echo $subtitles_url ?>",
-                srclang: 'vi',
-                label: 'Vietnamese',
-                kind: 'subtitles'
-            }, true);
+            if ("<?php echo $subtitles_url ?>" != "") {
+                player.addRemoteTextTrack({
+                    src: "<?php echo $subtitles_url ?>",
+                    srclang: 'vi',
+                    label: 'Vietnamese',
+                    kind: 'subtitles'
+                }, true);
+            }
         });
 
+        // Component
+        var Component = videojs.getComponent('Component');
+        var BackgroundBar = videojs.extend(Component, {
+            createEl: function() {
+                return videojs.dom.createEl('div', {
+                    className: 'vjs-background-bar'
+                });
+            },
+        });
+        videojs.registerComponent('BackgroundBar', BackgroundBar);
+
+        var Button = videojs.getComponent("Button");
+        var RewindButton = videojs.extend(Button, {
+            constructor: function(player, options) {
+                Button.apply(this, arguments);
+                this.addClass('vjs-rewind-control');
+                this.controlText("Rewind 10s");
+            },
+            handleClick: function() {
+                console.log('click');
+                player.currentTime(player.currentTime() - 10);
+            }
+        });
+        var ForwardButton = videojs.extend(Button, {
+            constructor: function(player, options) {
+                Button.apply(this, arguments);
+                this.addClass('vjs-forward-control');
+                this.controlText("Forward 10s");
+            },
+            handleClick: function() {
+                console.log('click');
+                player.currentTime(player.currentTime() + 10);
+            }
+        });
+        videojs.registerComponent('RewindButton', RewindButton);
+        videojs.registerComponent('ForwardButton', ForwardButton);
+        
+        var player = videojs("videojs", options);
+
+        player.addChild('BackgroundBar');
+        player.getChild('ControlBar').addChild('RewindButton', {}, 2);
+        player.getChild('ControlBar').addChild('ForwardButton', {}, 3);
+
+        // TVC
         player.preroll({
             // Source video quảng cáo
             src: [{
@@ -92,7 +136,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             target: '_blank',
             // Thuộc tính video quảng cáo
             allowSkip: true,
-            skipTime: 1, // Số giây quảng cáo tự động tắt
+            skipTime: 5, // Số giây quảng cáo tự động tắt
             adSign: true,
             // Thuộc tính hiển thị
             lang: {
