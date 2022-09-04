@@ -121,6 +121,25 @@ function tr_grabber_install() {
 
 register_activation_hook(__FILE__, 'tr_grabber_install');
 
+if ( get_option('tr_grabber') ) {
+    $config = unserialize ( get_option('tr_grabber') );
+    $homeconfig = $config['homecontrol'];
+
+    if ( !in_array('Animes|index/animes|1', $homeconfig) || !in_array('TV Shows|index/tvshows|1', $homeconfig) ) {
+        $array[] = 'Slider|slider/moved|1';
+        $array[] = 'Movies|index/movies|1';
+        $array[] = 'Series|index/series|1';
+        $array[] = 'Seasons|index/seasons|1';
+        $array[] = 'Episodes|index/episodes|1';
+        $array[] = 'Text|index/text|2';
+        $array[] = 'Animes|index/animes|1';
+        $array[] = 'TV Shows|index/tvshows|1';
+        $config['homecontrol'] = $array;
+    }
+
+    update_option( 'tr_grabber', serialize( $config ) );
+}
+
 $config_grabber = get_option('tr_grabber') == '' ? '' : unserialize ( get_option('tr_grabber') );
 
 define( 'TR_GRABBER_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );

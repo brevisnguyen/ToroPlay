@@ -2,21 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ToroPlay\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-26 19:55+0200\n"
-"PO-Revision-Date: 2022-09-04 23:30+0000\n"
-"Last-Translator: \n"
-"Language-Team: Tiếng Việt\n"
-"Language: vi\n"
+"POT-Creation-Date: 2022-09-04 23:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.2; wp-6.0.2"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/"
 
 #: taxonomy-letters.php:34 inc/links.php:316 inc/links.php:404
 msgid "#"
@@ -26,25 +26,25 @@ msgstr ""
 #: inc/template-tags.php:158 inc/template-tags.php:160
 #, php-format
 msgid "%1$sCast:%2$s %3$s"
-msgstr "%1$sDiễn viên:%2$s %3$s"
+msgstr ""
 
 #. 1: list of categories.
 #: inc/template-tags.php:124
 #, php-format
 msgid "%1$sDirector:%2$s %3$s"
-msgstr "%1$sĐạo diễn:%2$s %3$s"
+msgstr ""
 
 #. 1: list of categories.
 #: inc/template-tags.php:101
 #, php-format
 msgid "%1$sGenre:%2$s %3$s"
-msgstr "%1$sThể loại:%2$s %3$s"
+msgstr ""
 
 #. 1: list of tags.
 #: inc/template-tags.php:135
 #, php-format
 msgid "%1$sTags:%2$s %3$s"
-msgstr "%1$sTags:%2$s %3$s"
+msgstr ""
 
 #: inc/template-functions.php:546
 #, php-format
@@ -54,33 +54,33 @@ msgstr ""
 #: template-parts/index/seasons.php:44
 #, php-format
 msgid "%s - Episode%s"
-msgstr "%s - Tập%s"
+msgstr ""
 
 #: inc/template-tags.php:697
 #, php-format
 msgid "%s - Season %s - %s Episodes"
-msgstr "%s - Season %s - %s Episodes"
+msgstr ""
 
 #: inc/template-tags.php:253
 #, php-format
 msgid "%s Episodes"
-msgstr "%s Tập"
+msgstr ""
 
 #: taxonomy-letters.php:35
 #, php-format
 msgid "%s Results"
-msgstr "%s Kết quả"
+msgstr ""
 
 #: template-parts/index/animes.php:44 template-parts/index/series.php:44
 #: template-parts/index/tvshows.php:44
 #, php-format
 msgid "%s Season%s"
-msgstr "%s Phần"
+msgstr ""
 
 #: template-parts/single/single-series.php:15
 #, php-format
 msgid "%s Seasons - %s Episodes"
-msgstr "%s Phần - %s Tập"
+msgstr ""
 
 #: inc/template-tags.php:464
 #, php-format
@@ -90,11 +90,11 @@ msgstr ""
 #: 404.php:16
 #, php-format
 msgid "%s404%s %sSorry, we have nothing to show%s"
-msgstr "%s404%s %sXin lỗi, dữ liệu đang được cập nhật%s"
+msgstr ""
 
 #: inc/template-functions.php:833
 msgid "&laquo; Previous"
-msgstr "&laquo; Trước"
+msgstr ""
 
 #: inc/widgets/widget-trposts.php:354 inc/widgets/widget-trposts.php:370
 msgid "&mdash; Select &mdash;"
@@ -185,11 +185,11 @@ msgstr ""
 #: template-parts/single/single-movies.php:53
 #: template-parts/single/single-series.php:49
 msgid "Cast"
-msgstr "Diễn viên"
+msgstr ""
 
 #: inc/admin_ads.php:28
 msgid "Changes have been saved successfully."
-msgstr "Các thay đổi đã được lưu thành công."
+msgstr ""
 
 #: inc/template-functions.php:1048 inc/template-functions.php:1094
 msgid "Check"
@@ -218,7 +218,7 @@ msgstr ""
 #: comments.php:35
 #, php-format
 msgid "Comments %s%s%s"
-msgstr "Bình luân %s%s%s"
+msgstr ""
 
 #: inc/customizer/colors.php:91
 msgid "Content Background"
@@ -230,11 +230,11 @@ msgstr ""
 
 #: inc/widgets/widget-ads.php:80
 msgid "Content:"
-msgstr "Nội dung:"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:115
 msgid "Countries"
-msgstr "Quốc gia"
+msgstr ""
 
 #: inc/customizer/customizer.php:253
 msgid "CSS and JS Minified"
@@ -258,12 +258,12 @@ msgstr ""
 
 #: inc/widgets/widget-trfilter.php:83
 msgid "Directors"
-msgstr "Đạo diễn"
+msgstr ""
 
 #: template-parts/single/single-movies.php:62
 #: template-parts/single/single-series.php:60
 msgid "Directors: "
-msgstr "Đạo diễn:"
+msgstr ""
 
 #: inc/customizer/customizer.php:45 inc/customizer/customizer.php:65
 #: inc/customizer/customizer.php:84 inc/customizer/customizer.php:103
@@ -317,7 +317,7 @@ msgstr ""
 
 #: taxonomy-letters.php:38
 msgid "Duration"
-msgstr "Thời lượng"
+msgstr ""
 
 #: inc/customizer/customizer.php:66 inc/customizer/customizer.php:85
 #: inc/customizer/customizer.php:104 inc/customizer/customizer.php:276
@@ -338,7 +338,7 @@ msgstr ""
 #. Name of the template
 #: inc/template-tags.php:616
 msgid "Episodes"
-msgstr "Tập"
+msgstr ""
 
 #: inc/template-functions.php:1048
 msgid "Error, the license is not valid"
@@ -350,7 +350,7 @@ msgstr ""
 
 #: template-parts/single/single-series.php:56
 msgid "First air date: "
-msgstr "Phát hành: "
+msgstr ""
 
 #: functions.php:72
 msgid "Footer Menu"
@@ -391,11 +391,11 @@ msgstr ""
 #: template-parts/single/single-movies.php:60
 #: template-parts/single/single-series.php:58
 msgid "Genre: "
-msgstr "Thể loại:"
+msgstr ""
 
 #: taxonomy-letters.php:39 inc/widgets/widget-trfilter.php:131
 msgid "Genres"
-msgstr "Thể loại"
+msgstr ""
 
 #: inc/customizer/customizer.php:1007
 msgid "H1 - Cast"
@@ -473,16 +473,16 @@ msgstr ""
 #: inc/template-tags.php:540
 #, php-format
 msgid "Image %s"
-msgstr "Ảnh %s"
+msgstr ""
 
 #: template-parts/single/single-series.php:55
 msgid "In Production: "
-msgstr "Đang sản xuất: "
+msgstr ""
 
 #: template-parts/single/single-movies.php:52
 #: template-parts/single/single-series.php:48
 msgid "Info"
-msgstr "Thông tin"
+msgstr ""
 
 #: inc/customizer/customizer.php:1542
 msgid "Info Hover"
@@ -512,9 +512,12 @@ msgstr ""
 msgid "Latest"
 msgstr ""
 
+# inc/template-functions.php
+# inc/template-functions.php
+# inc/customizer/customizer.php
 #: inc/template-functions.php:474 inc/customizer/customizer.php:642
 msgid "Latest Animes"
-msgstr "Phim Hoạt Hình Mới Nhất"
+msgstr ""
 
 #: inc/customizer/customizer.php:649
 msgid "Latest Animes - HomePage"
@@ -522,7 +525,7 @@ msgstr ""
 
 #: inc/template-functions.php:469 inc/customizer/customizer.php:607
 msgid "Latest Episodes"
-msgstr "Tập phim mới nhất"
+msgstr ""
 
 #: inc/customizer/customizer.php:614
 msgid "Latest Episodes - HomePage"
@@ -531,7 +534,7 @@ msgstr ""
 #: inc/template-functions.php:454 inc/template-functions.php:507
 #: inc/customizer/customizer.php:502
 msgid "Latest Movies"
-msgstr "Phim lẻ mới nhất"
+msgstr ""
 
 #: inc/template-functions.php:464 inc/customizer/customizer.php:572
 msgid "Latest Seasons"
@@ -543,7 +546,7 @@ msgstr ""
 
 #: inc/template-functions.php:459 inc/customizer/customizer.php:537
 msgid "Latest Series"
-msgstr "Phim bộ mới nhất"
+msgstr ""
 
 #: inc/customizer/customizer.php:544
 msgid "Latest Series - HomePage"
@@ -551,7 +554,7 @@ msgstr ""
 
 #: inc/template-functions.php:479 inc/customizer/customizer.php:677
 msgid "Latest TV Shows"
-msgstr "TV Shows Mới Nhất"
+msgstr ""
 
 #: inc/customizer/customizer.php:684
 msgid "Latest TV Shows - HomePage"
@@ -647,7 +650,7 @@ msgstr ""
 #. Name of the template
 #: inc/template-functions.php:224 inc/widgets/widget-trposts.php:356
 msgid "Movies"
-msgstr "Phim lẻ"
+msgstr ""
 
 #: inc/template-functions.php:355
 msgid "Movies Online WordPress"
@@ -655,7 +658,7 @@ msgstr ""
 
 #: inc/template-functions.php:834
 msgid "Next &raquo;"
-msgstr "Tiếp &raquo;"
+msgstr ""
 
 #: inc/template-tags.php:474
 msgid "No"
@@ -704,16 +707,16 @@ msgstr ""
 
 #: inc/widgets/widget-trposts.php:321
 msgid "Order"
-msgstr "Thứ tự"
+msgstr ""
 
 #: inc/customizer/customizer.php:1287 inc/customizer/customizer.php:1374
 msgid "Order by"
-msgstr "Theo thứ tự"
+msgstr ""
 
 #: template-parts/single/single-movies.php:58
 #: template-parts/single/single-series.php:54
 msgid "Original title: "
-msgstr "Tên tiếng anh: "
+msgstr ""
 
 #: inc/template-functions.php:837
 #, php-format
@@ -738,7 +741,7 @@ msgstr ""
 
 #: template-parts/content/page.php:9
 msgid "Pages:"
-msgstr "Trang:"
+msgstr ""
 
 #: functions.php:269
 msgid "Please rate only 1 post at a time."
@@ -786,7 +789,7 @@ msgstr ""
 
 #: taxonomy-letters.php:37 inc/widgets/widget-trfilter.php:158
 msgid "Quality"
-msgstr "Chất lượng"
+msgstr ""
 
 #: inc/customizer/customizer.php:1292 inc/customizer/customizer.php:1379
 #: inc/widgets/widget-trposts.php:326
@@ -796,18 +799,18 @@ msgstr ""
 #: template-parts/single/single-movies.php:63
 #: template-parts/single/single-series.php:61
 msgid "Rating: "
-msgstr "Đánh giá"
+msgstr ""
 
 #: inc/filters.php:25 inc/customizer/customizer.php:1108
 #: inc/customizer/customizer.php:1115
 #: template-parts/single/single-movies.php:91
 #: template-parts/single/single-series.php:89
 msgid "Related"
-msgstr "Có thể bạn sẽ thích"
+msgstr ""
 
 #: template-parts/single/single-movies.php:59
 msgid "Release date: "
-msgstr "Phát hành: "
+msgstr ""
 
 #: inc/customizer/customizer.php:47
 msgid "Right"
@@ -831,21 +834,21 @@ msgstr ""
 
 #: formsearch.php:11
 msgid "Search..."
-msgstr "Tìm kiếm..."
+msgstr ""
 
 #: inc/template-tags.php:616 inc/template-tags.php:631
 msgid "Season"
-msgstr "Phần"
+msgstr ""
 
 #: inc/template-tags.php:735
 #, php-format
 msgid "Season %s"
-msgstr "Phần %s"
+msgstr ""
 
 #: inc/template-tags.php:622
 #, php-format
 msgid "Season %s %sEp.%s"
-msgstr "Phần %s %sEp.%s"
+msgstr ""
 
 #. Name of the template
 msgid "Seasons"
@@ -862,7 +865,7 @@ msgstr ""
 #. Name of the template
 #: inc/template-functions.php:225 inc/widgets/widget-trposts.php:359
 msgid "Series"
-msgstr "Phim bộ"
+msgstr ""
 
 #: inc/links.php:318 inc/links.php:406
 msgid "SERVER"
@@ -1187,12 +1190,12 @@ msgstr ""
 #: template-parts/slider/moved.php:113
 #, php-format
 msgid "Watch %sMovie%s"
-msgstr "Xem %sphim%s"
+msgstr ""
 
 #: template-parts/slider/moved.php:111
 #, php-format
 msgid "Watch %sSerie%s"
-msgstr "Xem %sphim%s"
+msgstr ""
 
 #: inc/customizer/colors.php:90
 msgid "Web Background"
@@ -1230,11 +1233,11 @@ msgstr ""
 
 #: taxonomy-letters.php:36
 msgid "Year"
-msgstr "Năm"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:59
 msgid "Years"
-msgstr "Năm"
+msgstr ""
 
 #: inc/template-tags.php:474
 msgid "Yes"
@@ -1269,7 +1272,7 @@ msgstr ""
 
 #: inc/customizer/customizer.php:723
 msgid "{title} to display the name of the category."
-msgstr "{title} hiển thị tên của danh mục."
+msgstr ""
 
 #: inc/customizer/customizer.php:759
 msgid "{title} to display the name of the tag."

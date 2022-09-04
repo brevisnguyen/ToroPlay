@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: ToroPlay\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-26 19:55+0200\n"
-"PO-Revision-Date: 2022-09-01 18:47+0000\n"
+"PO-Revision-Date: 2022-09-02 00:22+0000\n"
 "Last-Translator: \n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -648,7 +648,7 @@ msgstr ""
 #: inc/filters.php:25 inc/customizer/customizer.php:1038
 #: inc/customizer/customizer.php:1045
 msgid "Related"
-msgstr "Phim liên quan"
+msgstr "Có thể bạn sẽ thích"
 
 #: inc/filters.php:46
 msgid "This theme requires TR Grabber plugin activation to work."
@@ -878,7 +878,7 @@ msgstr ""
 #: inc/template-tags.php:250
 #, php-format
 msgid "%s Episodes"
-msgstr ""
+msgstr "%s Tập"
 
 #: inc/template-tags.php:454
 #, php-format
@@ -899,7 +899,7 @@ msgstr "Phần"
 
 #: inc/template-tags.php:606
 msgid "Episodes"
-msgstr ""
+msgstr "Tập"
 
 #: inc/template-tags.php:612
 #, php-format
@@ -1637,9 +1637,9 @@ msgstr ""
 #: template-parts/slider/moved.php:111
 #, php-format
 msgid "Watch %sSerie%s"
-msgstr ""
+msgstr "Xem %sphim%s"
 
 #: template-parts/slider/moved.php:113
 #, php-format
 msgid "Watch %sMovie%s"
-msgstr ""
+msgstr "Xem %sphim%s"

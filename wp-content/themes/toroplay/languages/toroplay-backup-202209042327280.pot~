@@ -2,31 +2,31 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: ToroPlay\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-26 19:55+0200\n"
-"PO-Revision-Date: 2022-09-01 18:46+0000\n"
-"Last-Translator: \n"
-"Language-Team: Tiếng Việt\n"
-"Language: vi\n"
+"POT-Creation-Date: 2022-09-04 23:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.2; wp-6.0.2"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/"
 
 #: 404.php:16
 #, php-format
 msgid "%s404%s %sSorry, we have nothing to show%s"
-msgstr "%s404%s %sXin lỗi, dữ liệu đang được cập nhật%s"
+msgstr ""
 
 #: comments.php:35
 #, php-format
 msgid "Comments %s%s%s"
-msgstr "Bình luân %s%s%s"
+msgstr ""
 
 #: footer.php:60
 msgid ""
@@ -45,7 +45,7 @@ msgstr ""
 
 #: formsearch.php:11
 msgid "Search..."
-msgstr "Tìm kiếm..."
+msgstr ""
 
 #: formsearch.php:16 functions.php:243 inc/admin.php:20
 msgid "Loading"
@@ -111,23 +111,23 @@ msgstr ""
 #: taxonomy-letters.php:35
 #, php-format
 msgid "%s Results"
-msgstr "%s Kết quả"
+msgstr ""
 
 #: taxonomy-letters.php:36
 msgid "Year"
-msgstr "Năm"
+msgstr ""
 
 #: taxonomy-letters.php:37 inc/widgets/widget-trfilter.php:158
 msgid "Quality"
-msgstr "Chất lượng"
+msgstr ""
 
 #: taxonomy-letters.php:38
 msgid "Duration"
-msgstr "Thời lượng"
+msgstr ""
 
 #: taxonomy-letters.php:39 inc/widgets/widget-trfilter.php:131
 msgid "Genres"
-msgstr "Thể loại"
+msgstr ""
 
 #: taxonomy-letters.php:41
 msgid "VOTES"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: inc/admin_ads.php:28
 msgid "Changes have been saved successfully."
-msgstr "Các thay đổi đã được lưu thành công."
+msgstr ""
 
 #: inc/admin_ads.php:89
 msgid "Header Bottom"
@@ -260,12 +260,14 @@ msgstr ""
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:349
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:355
 #, php-format
@@ -276,39 +278,46 @@ msgid_plural ""
 "The following plugins need to be updated to their latest version to ensure "
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:361
 #, php-format
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:367
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:373
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:378
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:383
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:388
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:392
 msgid "Return to Required Plugins Installer"
@@ -331,6 +340,7 @@ msgstr ""
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:397
 #, php-format
@@ -411,7 +421,7 @@ msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2367
 msgid "Recommended"
-msgstr "Đề xuất"
+msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2383
 msgid "WordPress Repository"
@@ -461,24 +471,28 @@ msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:2483
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:2487
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:2491
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
+msgstr[1] ""
 
 #: inc/class-tgm-plugin-activation.php:2573
 msgctxt "as in: \"version nr unknown\""
@@ -519,7 +533,7 @@ msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2645
 msgid "Status"
-msgstr "Trạng thái"
+msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2694
 #, php-format
@@ -648,7 +662,7 @@ msgstr ""
 #: inc/filters.php:25 inc/customizer/customizer.php:1038
 #: inc/customizer/customizer.php:1045
 msgid "Related"
-msgstr "Phim liên quan"
+msgstr ""
 
 #: inc/filters.php:46
 msgid "This theme requires TR Grabber plugin activation to work."
@@ -680,7 +694,7 @@ msgstr ""
 #: inc/template-tags.php:530
 #, php-format
 msgid "Image %s"
-msgstr "Ảnh %s"
+msgstr ""
 
 #: inc/links.php:280 inc/links.php:368
 msgid "Download"
@@ -730,11 +744,11 @@ msgstr ""
 
 #: inc/template-functions.php:224 inc/widgets/widget-trposts.php:433
 msgid "Movies"
-msgstr "Phim lẻ"
+msgstr ""
 
 #: inc/template-functions.php:225 inc/widgets/widget-trposts.php:436
 msgid "Series"
-msgstr "Phim bộ"
+msgstr ""
 
 #: inc/template-functions.php:278 inc/template-functions.php:290
 msgid "Close"
@@ -759,11 +773,11 @@ msgstr ""
 #: inc/template-functions.php:450 inc/template-functions.php:493
 #: inc/customizer/customizer.php:502
 msgid "Latest Movies"
-msgstr "Phim lẻ mới nhất"
+msgstr ""
 
 #: inc/template-functions.php:455 inc/customizer/customizer.php:537
 msgid "Latest Series"
-msgstr "Phim bộ mới nhất"
+msgstr ""
 
 #: inc/template-functions.php:460 inc/customizer/customizer.php:572
 msgid "Latest Seasons"
@@ -771,7 +785,7 @@ msgstr ""
 
 #: inc/template-functions.php:465 inc/customizer/customizer.php:607
 msgid "Latest Episodes"
-msgstr "Tập phim mới nhất"
+msgstr ""
 
 #: inc/template-functions.php:470 inc/template-functions.php:474
 #: inc/template-functions.php:481 inc/template-functions.php:485
@@ -807,11 +821,11 @@ msgstr ""
 
 #: inc/template-functions.php:773
 msgid "&laquo; Previous"
-msgstr "&laquo; Trước"
+msgstr ""
 
 #: inc/template-functions.php:774
 msgid "Next &raquo;"
-msgstr "Tiếp &raquo;"
+msgstr ""
 
 #: inc/template-functions.php:777
 #, php-format
@@ -845,12 +859,12 @@ msgstr ""
 #: inc/template-tags.php:99
 #, php-format
 msgid "%1$sGenre:%2$s %3$s"
-msgstr "%1$sThể loại:%2$s %3$s"
+msgstr ""
 
 #: inc/template-tags.php:122
 #, php-format
 msgid "%1$sDirector:%2$s %3$s"
-msgstr "%1$sĐạo diễn:%2$s %3$s"
+msgstr ""
 
 #: inc/template-tags.php:130
 msgctxt "list item separator"
@@ -860,12 +874,12 @@ msgstr ""
 #: inc/template-tags.php:133
 #, php-format
 msgid "%1$sTags:%2$s %3$s"
-msgstr "%1$sTags:%2$s %3$s"
+msgstr ""
 
 #: inc/template-tags.php:156 inc/template-tags.php:158
 #, php-format
 msgid "%1$sCast:%2$s %3$s"
-msgstr "%1$sDiễn viên:%2$s %3$s"
+msgstr ""
 
 #: inc/template-tags.php:156
 msgid "View More"
@@ -895,7 +909,7 @@ msgstr ""
 
 #: inc/template-tags.php:606 inc/template-tags.php:621
 msgid "Season"
-msgstr "Phần"
+msgstr ""
 
 #: inc/template-tags.php:606
 msgid "Episodes"
@@ -904,7 +918,7 @@ msgstr ""
 #: inc/template-tags.php:612
 #, php-format
 msgid "Season %s %sEp.%s"
-msgstr "Phần %s %sEp.%s"
+msgstr ""
 
 #: inc/template-tags.php:616
 msgid "Special"
@@ -913,7 +927,7 @@ msgstr ""
 #: inc/template-tags.php:687
 #, php-format
 msgid "%s - Season %s - %s Episodes"
-msgstr "%s - Season %s - %s Episodes"
+msgstr ""
 
 #: inc/template-tags.php:720
 msgid "No episodes available"
@@ -922,7 +936,7 @@ msgstr ""
 #: inc/template-tags.php:725
 #, php-format
 msgid "Season %s"
-msgstr "Phần %s"
+msgstr ""
 
 #: inc/customizer/colors.php:27
 msgid "Default"
@@ -1185,7 +1199,7 @@ msgstr ""
 
 #: inc/customizer/customizer.php:653
 msgid "{title} to display the name of the category."
-msgstr "{title} hiển thị tên của danh mục."
+msgstr ""
 
 #: inc/customizer/customizer.php:685
 msgid "H1 - Tag"
@@ -1292,7 +1306,7 @@ msgstr ""
 
 #: inc/customizer/customizer.php:1217 inc/customizer/customizer.php:1304
 msgid "Order by"
-msgstr "Theo thứ tự"
+msgstr ""
 
 #: inc/customizer/customizer.php:1222 inc/customizer/customizer.php:1309
 #: inc/widgets/widget-trposts.php:403
@@ -1415,7 +1429,7 @@ msgstr ""
 
 #: inc/widgets/widget-ads.php:80
 msgid "Content:"
-msgstr "Nội dung:"
+msgstr ""
 
 #: inc/widgets/widget-ads.php:84
 msgid "Content Mobile:"
@@ -1431,7 +1445,7 @@ msgstr ""
 
 #: inc/widgets/widget-trfilter.php:59
 msgid "Years"
-msgstr "Năm"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:63
 msgid "Write the year"
@@ -1439,7 +1453,7 @@ msgstr ""
 
 #: inc/widgets/widget-trfilter.php:83
 msgid "Directors"
-msgstr "Đạo diễn"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:87 inc/widgets/widget-trfilter.php:103
 #: inc/widgets/widget-trfilter.php:119
@@ -1450,11 +1464,11 @@ msgstr ""
 #: template-parts/single/single-movies.php:52
 #: template-parts/single/single-series.php:49
 msgid "Cast"
-msgstr "Diễn viên"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:115
 msgid "Countries"
-msgstr "Quốc gia"
+msgstr ""
 
 #: inc/widgets/widget-trfilter.php:135
 msgid "Write the category"
@@ -1531,7 +1545,7 @@ msgstr ""
 
 #: inc/widgets/widget-trposts.php:398
 msgid "Order"
-msgstr "Thứ tự"
+msgstr ""
 
 #: inc/widgets/widget-trposts.php:400
 msgid "Latest"
@@ -1571,36 +1585,36 @@ msgstr ""
 
 #: template-parts/content/page.php:9
 msgid "Pages:"
-msgstr "Trang:"
+msgstr ""
 
 #: template-parts/index/seasons.php:44
 #, php-format
 msgid "%s - Episode%s"
-msgstr "%s - Tập%s"
+msgstr ""
 
 #: template-parts/index/series.php:44
 #, php-format
 msgid "%s Season%s"
-msgstr "%s Phần%s"
+msgstr ""
 
 #: template-parts/single/single-movies.php:51
 #: template-parts/single/single-series.php:48
 msgid "Info"
-msgstr "Thông tin"
+msgstr ""
 
 #: template-parts/single/single-movies.php:57
 #: template-parts/single/single-series.php:54
 msgid "Original title: "
-msgstr "Tên tiếng anh: "
+msgstr ""
 
 #: template-parts/single/single-movies.php:58
 msgid "Release date: "
-msgstr "Phát hành: "
+msgstr ""
 
 #: template-parts/single/single-movies.php:59
 #: template-parts/single/single-series.php:58
 msgid "Genre: "
-msgstr "Thể loại:"
+msgstr ""
 
 #: template-parts/single/single-movies.php:60
 #: template-parts/single/single-series.php:59
@@ -1610,25 +1624,25 @@ msgstr ""
 #: template-parts/single/single-movies.php:61
 #: template-parts/single/single-series.php:60
 msgid "Directors: "
-msgstr "Đạo diễn:"
+msgstr ""
 
 #: template-parts/single/single-movies.php:62
 #: template-parts/single/single-series.php:61
 msgid "Rating: "
-msgstr "Đánh giá"
+msgstr ""
 
 #: template-parts/single/single-series.php:15
 #, php-format
 msgid "%s Seasons - %s Episodes"
-msgstr "%s Phần - %s Tập"
+msgstr ""
 
 #: template-parts/single/single-series.php:55
 msgid "In Production: "
-msgstr "Đang sản xuất: "
+msgstr ""
 
 #: template-parts/single/single-series.php:56
 msgid "First air date: "
-msgstr "Phát hành: "
+msgstr ""
 
 #: template-parts/single/single-series.php:57
 msgid "Last air date: "
@@ -1642,4 +1656,16 @@ msgstr ""
 #: template-parts/slider/moved.php:113
 #, php-format
 msgid "Watch %sMovie%s"
+msgstr ""
+
+# inc/template-functions.php
+# inc/template-functions.php
+# inc/customizer/customizer.php
+msgid "Latest Animes"
+msgstr ""
+
+# inc/template-functions.php
+# inc/template-functions.php
+# inc/customizer/customizer.php
+msgid "Latest TV Shows"
 msgstr ""

@@ -202,7 +202,7 @@ function tr_icon_tv($id = NULL, $display=NULL) {
 
     $id = $id == '' ? $post->ID : $id;
     
-    $return = tr_check_type($id) == 2 ? ' <span class="TpTv BgA">'.__('TV', 'toroplay').'</span>' : '';
+    $return = tr_check_type($id) == 2 ? ' <span class="TpTv BgA">'.get_post_meta($id, 'status', true).'</span>' : ' <span class="TpTv BgA">'.__('Full', 'toroplay').'</span>';
 
     if($display==NULL) { return $return; }else{ echo $return; }
 }
@@ -392,6 +392,8 @@ function tr_homecontrol( $type = 1 ) {
             $array[] = 'Seasons|index/seasons|1';
             $array[] = 'Episodes|index/episodes|1';
             $array[] = 'Text|index/text|2';
+            $array[] = 'Animes|index/animes|1';
+            $array[] = 'TV Shows|index/tvshows|1';
 
         }
         
@@ -417,6 +419,8 @@ function tr_homecontrol( $type = 1 ) {
             $array[] = 'index/seasons';
             $array[] = 'index/episodes';
             $array[] = 'index/text';
+            $array[] = 'index/animes';
+            $array[] = 'index/tvshows';
 
         }
         
@@ -464,6 +468,16 @@ function tr_title($id = NULL, $class = NULL, $display=TRUE, $term_id = NULL) {
     if( $id == 'tp_homepage_episodes' and !is_page() ) {
         $text = get_theme_mod( 'tp_homepage_episodes', __('Latest Episodes', 'toroplay') );
         $tag = get_theme_mod( 'tp_homepage_episodestag', 'div' );
+    }
+
+    if( $id == 'tp_homepage_animes' and !is_page() ) {
+        $text = get_theme_mod( 'tp_homepage_animes', __('Latest Animes', 'toroplay') );
+        $tag = get_theme_mod( 'tp_homepage_animestag', 'div' );
+    }
+
+    if( $id == 'tp_homepage_tvshows' and !is_page() ) {
+        $text = get_theme_mod( 'tp_homepage_tvshows', __('Latest TV Shows', 'toroplay') );
+        $tag = get_theme_mod( 'tp_homepage_tvshowstag', 'div' );
     }
     
     if( $id == 'list' and is_category() ) {
@@ -740,6 +754,50 @@ function tr_args( $type = 1, $paged = NULL ) {
             'paged' => $paged,
             'meta_key' => 'ratings_average',
             'orderby' => 'meta_value_num'
+            
+        );
+        
+    }elseif( $type == 9 ) {
+        
+        $limit = is_page_template( 'pages/template-series.php' ) ? get_theme_mod('tp_posts_per_page', 20) : get_theme_mod('tp_posts_per_series', 10);
+        
+        $args = array(
+        
+            'posts_per_page' => $limit,
+            'post_type' => array( 'movies', 'series' ),
+            'paged' => $paged,
+            'category_name' => 'hoat-hinh',
+            /*
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'slug',
+                    'terms' => 'hoat-hinh',
+                )
+            )
+            */
+            
+        );
+        
+    }elseif( $type == 10 ) {
+        
+        $limit = is_page_template( 'pages/template-series.php' ) ? get_theme_mod('tp_posts_per_page', 20) : get_theme_mod('tp_posts_per_series', 10);
+        
+        $args = array(
+        
+            'posts_per_page' => $limit,
+            'post_type' => array( 'movies', 'series' ),
+            'paged' => $paged,
+            'category_name' => 'tv-shows',
+            /*
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'slug',
+                    'terms' => 'tv-shows',
+                )
+            )
+            */
             
         );
         

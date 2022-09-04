@@ -637,6 +637,76 @@ function tr_customize_register($wp_customize) {
             'h4' =>  'h4',
         ),
     ));
+
+    $wp_customize->add_setting('tp_homepage_animes', array(
+        'default' => __('Latest Animes', 'toroplay'),
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'tr_sanitize_text_html',
+		'transport'         => 'postMessage'
+    ));
+ 
+    $wp_customize->add_control('tp_homepage_animes', array(
+        'label'      => __('Latest Animes - HomePage', 'toroplay'),
+        'section'    => 'tr_seo',
+        'settings'   => 'tp_homepage_animes',
+        'type' => 'textarea'
+    ));
+    
+    $wp_customize->add_setting('tp_homepage_animestag', array(
+        'default'        => 'div',
+        'capability'     => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+		'transport'         => 'postMessage'
+    ));
+ 
+    $wp_customize->add_control('tp_homepage_animestag', array(
+        'label'      => __('Tag', 'toroplay'),
+        'section'    => 'tr_seo',
+        'settings'   => 'tp_homepage_animestag',
+        'type'       => 'select',
+        'choices'    => array(
+            'div' => 'div',
+            'h1' =>  'h1',
+            'h2' =>  'h2',
+            'h3' =>  'h3',
+            'h4' =>  'h4',
+        ),
+    ));
+
+    $wp_customize->add_setting('tp_homepage_tvshows', array(
+        'default' => __('Latest TV Shows', 'toroplay'),
+        'capability'        => 'edit_theme_options',
+        'sanitize_callback' => 'tr_sanitize_text_html',
+		'transport'         => 'postMessage'
+    ));
+ 
+    $wp_customize->add_control('tp_homepage_tvshows', array(
+        'label'      => __('Latest TV Shows - HomePage', 'toroplay'),
+        'section'    => 'tr_seo',
+        'settings'   => 'tp_homepage_tvshows',
+        'type' => 'textarea'
+    ));
+    
+    $wp_customize->add_setting('tp_homepage_tvshowstag', array(
+        'default'        => 'div',
+        'capability'     => 'edit_theme_options',
+        'sanitize_callback' => 'sanitize_text_field',
+		'transport'         => 'postMessage'
+    ));
+ 
+    $wp_customize->add_control('tp_homepage_tvshowstag', array(
+        'label'      => __('Tag', 'toroplay'),
+        'section'    => 'tr_seo',
+        'settings'   => 'tp_homepage_tvshowstag',
+        'type'       => 'select',
+        'choices'    => array(
+            'div' => 'div',
+            'h1' =>  'h1',
+            'h2' =>  'h2',
+            'h3' =>  'h3',
+            'h4' =>  'h4',
+        ),
+    ));
     
     $wp_customize->add_setting('tp_category', array(
         'default' => __('{title}', 'toroplay'),
