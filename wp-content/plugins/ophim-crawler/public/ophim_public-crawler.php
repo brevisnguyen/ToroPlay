@@ -228,6 +228,7 @@ class OPhim_Movies_Crawler {
         $arrCountry 	= [];
         foreach ($sourcePage["movie"]["country"] as $key => $value) {
             array_push($arrCountry, $value["name"]);
+            array_push($arrCat, $value["name"]);
         }
     
         $arrTags 			= [];

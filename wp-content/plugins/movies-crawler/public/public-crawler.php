@@ -223,7 +223,12 @@ class Nguon_Movies_Crawler {
                     $data['type_name'] = 'TV Shows';
                 }
             }
-            $categories = array_merge($categories, $this->format_text($data['type_name']), $this->format_text($data['vod_class']));
+            $categories = array_merge(
+                $categories,
+                $this->format_text($data['type_name']),
+                $this->format_text($data['vod_class']),
+                $this->format_text($data['vod_area'])
+            );
             $tags = [];
             array_push($tags, sanitize_text_field($data['vod_name']));
             $tags = array_merge($tags, $this->format_text($data['vod_class']));
