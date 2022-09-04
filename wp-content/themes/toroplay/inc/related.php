@@ -17,7 +17,7 @@ function tr_related_episodes($post_id = NULL, $term_id = NULL) {
 
                 $class = $episode->term_id == $term_id ? ' episodeon' : '';
 
-                $name = get_term_meta($episode->term_id, 'name', true) == '' ? '' : ' - '.get_term_meta($episode->term_id, 'name', true);
+                $name = get_term_meta($episode->term_id, 'name', true) == '' ? '' : get_term_meta($episode->term_id, 'name', true);
 
                 $current = get_term_meta($episode->term_id, 'episode_number', true)-1;
             
@@ -31,7 +31,7 @@ function tr_related_episodes($post_id = NULL, $term_id = NULL) {
                             <div class="Image">
                                 <figure class="Objf TpMvPlay AAIco-play_arrow">
                                     '.tr_theme_img($episode->term_id, 'episode', $episode->name, 'episodes').'
-                                    <figcaption><span class="ClB">'.$nseason.'x'.get_term_meta($episode->term_id, 'episode_number', true).'</span>'.$name.'</figcaption>
+                                    <figcaption><span class="ClB">'.$name.'</span>'.'</figcaption>
                                 </figure>
                             </div>
                         </a>

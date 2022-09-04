@@ -51,7 +51,7 @@ $ep_link_type = intval(get_query_var('trembed')) == 0 ? 'embed' : 'm3u8';  // 0 
             type='video/x-matroska';
         }
         var options = {
-            autoplay: false,
+            autoplay: true,
             fluid: true,
             poster: '<?php echo $poster ?>',
             responsive: true,
