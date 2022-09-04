@@ -233,7 +233,7 @@ function toroplay_scripts() {
 
     wp_enqueue_style( 'toroplay-style', get_stylesheet_uri(), array(), TR_THEMEVERSION );
 
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Montserrat:300,400,700', array(), TR_THEMEVERSION);
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Signika+Negative:300,400,700', array(), TR_THEMEVERSION);
 
     wp_enqueue_script( 'toroplay-carousel', get_template_directory_uri() . '/js/owl.carousel.min.js', array('jquery'), TR_THEMEVERSION, true );
         
