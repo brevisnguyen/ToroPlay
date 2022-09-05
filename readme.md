@@ -17,5 +17,5 @@ Live Demo: [phimmoihdd.com](https://phimmoihdd.com/)
 ## Todo
 
 - Hỗ trợ dark mode
-- Đa ngôn ngữ
+- Thêm bình luận facebook
 - Get thông tin phim từ TMDB
