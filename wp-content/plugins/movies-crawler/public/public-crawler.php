@@ -145,7 +145,7 @@ class Nguon_Movies_Crawler {
         $movie_data = $this->refined_data($data['list']);
 
         $args = array(
-			'post_type' => 'series',
+			'post_type' => array('series', 'movies'),
 			'posts_per_page' => 1,
 			'meta_query' => array(
 				array(

@@ -628,6 +628,14 @@ function tr_args( $type = 1, $paged = NULL ) {
             'posts_per_page' => $limit,
             'post_type' => 'series',
             'paged' => $paged,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'category',
+                    'field' => 'slug',
+                    'terms' => array( 'hoat-hinh', 'tv-shows' ),
+                    'operator' => 'NOT IN'
+                )
+            )
             /*
             'meta_query' => array(
 

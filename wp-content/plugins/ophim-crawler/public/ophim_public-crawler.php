@@ -103,7 +103,7 @@ class OPhim_Movies_Crawler {
             $movie_data = $this->create_data($sourcePage, $url, $ophim_id, $ophim_update_time);
         
             $args = array(
-                'post_type' => 'series',
+                'post_type' => array('series', 'movies'),
                 'posts_per_page' => 1,
                 'meta_query' => array(
                     array(
