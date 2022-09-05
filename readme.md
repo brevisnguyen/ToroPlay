@@ -1,4 +1,4 @@
-![screenshot](https://phimmoihdd.com/wp-content/uploads/2022/09/phimmoihdd.png)
+![screenshot](https://github.com/brevis-ng/ToroPlay/blob/master/phimmoihdd.png?raw=true)
 
 # Movie website with Toroplay
 
