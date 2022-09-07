@@ -73,6 +73,11 @@ get_header(); ?>
             comments_template();
         ?>
 
+        <div class="Wdgt" id="comments">
+            <div class="Title"><?php printf( __('Comments %s%s%s', 'toroplay'), 'phim <span>', get_the_title($tr_post_id), '</span>' ); ?></div>
+            <div class="fb-comments" style="background-color: rgba(255,255,255,.9);" data-href="<?php global $wp; echo add_query_arg( $wp->query_vars, home_url( $wp->request ) ); ?>" data-width="100%" data-order-by="time"></div>
+        </div>
+
     </main>
     <!--</Main>-->
 

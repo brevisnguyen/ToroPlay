@@ -47,6 +47,7 @@
             <div class="MovieTabNav">
                 <div class="Lnk on AAIco-description" data-Mvtab="MvTb-Info"><?php _e('Info', 'toroplay'); ?></div>
                 <div class="Lnk AAIco-movie_filter" data-Mvtab="MvTb-Cast"><?php _e('Cast', 'toroplay'); ?></div>
+                <div class="Lnk AAIco-comment" data-Mvtab="MvTb-Comment"><?php printf( __('Comments %s%s%s', 'toroplay'), '<span>phim ', get_the_title($post->ID), '</span>' ); ?></div>
             </div>
             <!--<Info>-->
             <div class="MvTbCn on anmt" id="MvTb-Info">
@@ -62,6 +63,11 @@
                 </ul>                                    
             </div>
             <!--</Info>-->
+            <!-- FB Comments -->
+            <div class="MvTbCn anmt" id="MvTb-Comment">
+                <div class="fb-comments" style="background-color: rgba(255,255,255,.9);" data-href="<?php global $wp; echo add_query_arg( $wp->query_vars, home_url( $wp->request ) ); ?>" data-width="100%" data-order-by="time"></div>
+            </div>
+            <!-- FB Comments -->
             <?php toroplay_post_info($post->ID, '', '', 'cast_single', TRUE); ?>
             <div class="TPostBg Objf"><?php tr_backdrop('w780', $post->ID); ?></div>
         </div>

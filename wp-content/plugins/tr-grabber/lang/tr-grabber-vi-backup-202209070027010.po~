@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Tr Grabber\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-26 19:57+0200\n"
-"PO-Revision-Date: 2022-09-07 00:27+0000\n"
+"PO-Revision-Date: 2022-09-01 20:34+0000\n"
 "Last-Translator: \n"
 "Language-Team: Tiếng Việt\n"
 "Language: vi\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: tr-grabber.php:51 inc/constants.php:30 inc/config/index.php:53
 msgid "episode"
-msgstr "Tập"
+msgstr ""
 
 #: tr-grabber.php:52 inc/constants.php:29 inc/config/index.php:52
 msgid "season"
@@ -274,7 +274,7 @@ msgstr ""
 
 #: inc/menu.php:89 inc/taxonomies.php:144 inc/taxonomies.php:154
 msgid "Episodes"
-msgstr "Tập"
+msgstr ""
 
 #: inc/notices.php:25
 #, php-format
@@ -834,7 +834,7 @@ msgstr ""
 
 #: inc/panel/series/episodes-fields.php:43
 msgid "Episode number"
-msgstr "Số tập"
+msgstr ""
 
 #: inc/panel/series/episodes-fields.php:48
 #: inc/panel/series/episodes-fields.php:113
