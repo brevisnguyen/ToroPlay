@@ -27,9 +27,9 @@ if ( ! function_exists( 'toroplay_entry_header' ) ) :
 			$runtime_field = is_array($runtime_field) ? array_filter($runtime_field) : $runtime_field;
             
             if(tr_check_type($post->ID)==2 and is_array($runtime_field) and !empty( $runtime_field ) ) {
-                $runtime_field = implode('m, ', $runtime_field).'m ';
+                $runtime_field = implode('m, ', $runtime_field);
             }elseif(tr_check_type($post->ID)==2 and !is_array($runtime_field) and !empty( $runtime_field ) ){
-                $runtime_field = implode('m, ', explode(',', $runtime_field)).'m';
+                $runtime_field = implode('m, ', explode(',', $runtime_field));
             }else{
                 $runtime_field = $runtime_field;
             }
@@ -354,9 +354,9 @@ if ( ! function_exists( 'toroplay_episode_info' ) ) :
 			$runtime_field = is_array($runtime_field) ? array_filter($runtime_field) : $runtime_field;
             
             if(tr_check_type($post_id)==2 and is_array($runtime_field) and count( array_filter( $runtime_field ) ) > 0 and isset( $runtime_field )){
-                $runtime_field = implode('m, ', $runtime_field).'m ';
+                $runtime_field = implode('m, ', $runtime_field);
             }elseif(tr_check_type($post_id)==2 and !is_array($runtime_field) and !empty( $runtime_field )){
-                $runtime_field = implode('m, ', explode(',', $runtime_field)).'m';
+                $runtime_field = implode('m, ', explode(',', $runtime_field));
             }elseif( !empty($runtime_field) ){
                 $runtime_field = $runtime_field;
             }
@@ -416,9 +416,9 @@ if ( ! function_exists( 'toroplay_post_info' ) ) :
 			$runtime_field = is_array($runtime_field) ? array_filter($runtime_field) : $runtime_field;
             
             if(tr_check_type($post_id)==2 and is_array($runtime_field) and !empty( $runtime_field )){
-                $runtime_field = implode('m, ', $runtime_field).'m ';
+                $runtime_field = implode('m, ', $runtime_field);
             }elseif(tr_check_type($post_id)==2 and !is_array($runtime_field) and !empty( $runtime_field )){
-                $runtime_field = implode('m, ', explode(',', $runtime_field)).'m';
+                $runtime_field = implode('m, ', explode(',', $runtime_field));
             }elseif( !empty($runtime_field) ){
                 $runtime_field = $runtime_field;
             }else{

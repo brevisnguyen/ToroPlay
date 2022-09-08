@@ -67,8 +67,8 @@
             <!--</Info>-->
              <?php toroplay_post_info($post->ID, '', '', 'cast_single', TRUE); ?>
             <!-- FB Comments -->
-            <div class="MvTbCn anmt" id="MvTb-Comment">
-                <div class="fb-comments" style="background-color: rgba(255,255,255,.9);" data-href="<?php global $wp; echo add_query_arg( $wp->query_vars, home_url( $wp->request ) ); ?>" data-width="100%" data-order-by="time"></div>
+            <div class="MvTbCn anmt" id="MvTb-Comment" style="background-color: rgba(255,255,255,.9);">
+                <div class="fb-comments" data-href="<?php global $wp; echo add_query_arg( $wp->query_vars, home_url( $wp->request ) ); ?>" data-width="100%" data-order-by="time"></div>
             </div>
             <!-- FB Comments -->
             <div class="TPostBg Objf"><?php tr_backdrop('w780', $post->ID); ?></div>
