@@ -304,6 +304,23 @@ class Nguon_Movies_Crawler {
 
         wp_set_object_terms($post_id, $data['status'], 'status', false);
 
+        if ( isset($data['pic_url']) ) {
+            $results = $this->save_images($data['pic_url']);
+            if ( $results !== false ) {
+                $attachment = array(
+                    'guid' => $results['url'], 
+                    'post_mime_type' => $results['type'],
+                    'post_title' => preg_replace('/\.[^.]+$/', '', basename($results['file'])),
+                    'post_content' => '',
+                    'post_status' => 'inherit'
+                );
+                $attach_id = wp_insert_attachment($attachment, $results['file'], $post_id);
+    
+                set_post_thumbnail($post_id, $attach_id);
+                $data['pic_url'] = $results['url'];
+            }
+        }
+
         $post_meta_movies = array(
             'field_title' => $data['org_title'],
             'field_date' => sanitize_text_field($data['year']),
@@ -568,6 +585,52 @@ class Nguon_Movies_Crawler {
         $term_id_season = tr_grabber_list_seasons($post_id, $season_number);
         update_term_meta( $term_id_season[0]->term_id, 'number_of_episodes', tr_grabber_count_episodes( $post_id, $season_number, false ) );
         update_post_meta( $post_id, 'number_of_episodes', tr_grabber_count_episodes($post_id, $season_number, false) );
+    }
+
+    /**
+	 * Save movie thumbail to WP
+	 *
+	 * @param  string   $image_url   thumbail url
+	 */
+    public function save_images($image_url)
+    {
+        require_once( ABSPATH . "/wp-admin/includes/file.php");
+
+        $temp_file = download_url( $image_url, 10 );
+        if ( ! is_wp_error( $temp_file ) ) {
+
+            $mime_extensions = array(
+                'jpg'          => 'image/jpg',
+                'jpeg'         => 'image/jpeg',
+                'gif'          => 'image/gif',
+                'png'          => 'image/png',
+                'webp'         => 'image/webp',
+            );
+
+            // Array based on $_FILE as seen in PHP file uploads.
+            $file = array(
+                'name'     => basename($image_url), // ex: wp-header-logo.png
+                'type'     => $mime_extensions[pathinfo( $image_url, PATHINFO_EXTENSION )],
+                'tmp_name' => $temp_file,
+                'error'    => 0,
+                'size'     => filesize( $temp_file ),
+            );
+        
+            $overrides = array(
+                'test_form' => false,
+                'test_size' => true,
+                'test_upload' => true,
+            );
+        
+            // Move the temporary file into the uploads directory.
+            $results = wp_handle_sideload( $file, $overrides );
+        
+            if ( ! empty( $results['error'] ) ) {
+                return false;
+            } else {
+                return $results;
+            }
+        }
     }
 
     /**

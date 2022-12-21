@@ -602,6 +602,7 @@ function tr_args( $type = 1, $paged = NULL ) {
             'posts_per_page' => $limit,
             'post_type' => 'movies',
             'paged' => $paged,
+            'orderby' => 'modified',
             /*
             'meta_query' => array(
             'relation' => 'OR',
@@ -628,6 +629,7 @@ function tr_args( $type = 1, $paged = NULL ) {
             'posts_per_page' => $limit,
             'post_type' => 'series',
             'paged' => $paged,
+            'orderby' => 'modified',
             'tax_query' => array(
                 array(
                     'taxonomy' => 'category',
@@ -775,6 +777,7 @@ function tr_args( $type = 1, $paged = NULL ) {
             'post_type' => array( 'movies', 'series' ),
             'paged' => $paged,
             'category_name' => 'hoat-hinh',
+            'orderby' => 'modified',
             /*
             'tax_query' => array(
                 array(
@@ -797,6 +800,7 @@ function tr_args( $type = 1, $paged = NULL ) {
             'post_type' => array( 'movies', 'series' ),
             'paged' => $paged,
             'category_name' => 'tv-shows',
+            'orderby' => 'modified',
             /*
             'tax_query' => array(
                 array(
