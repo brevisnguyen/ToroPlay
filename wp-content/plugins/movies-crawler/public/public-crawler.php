@@ -594,9 +594,9 @@ class Nguon_Movies_Crawler {
 	 */
     public function save_images($image_url)
     {
-        require_once( ABSPATH . "/wp-admin/includes/file.php");
+        require_once( ABSPATH . "wp-admin/includes/file.php");
 
-        $temp_file = download_url( $image_url, 10 );
+        $temp_file = download_url( $image_url, 300 );
         if ( ! is_wp_error( $temp_file ) ) {
 
             $mime_extensions = array(
