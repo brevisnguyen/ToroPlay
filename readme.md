@@ -13,9 +13,10 @@ Live Demo: [phimmoihdd.com](https://phimmoihdd.com/)
 - Sửa hiển thị tên tập phim
 - Sửa hiển thị danh sách tập phim
 - Sửa trạng thái phim
+- Thêm bình luận facebook
 
 ## Todo
 
 - Hỗ trợ dark mode
-- Thêm bình luận facebook
-- Get thông tin phim từ TMDB
+- ~~Thêm bình luận facebook~~
+- ~~Get thông tin phim từ TMDB~~
