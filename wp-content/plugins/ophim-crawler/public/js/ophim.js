@@ -92,13 +92,13 @@
                     let data = JSON.parse(res);
                     if (data.status) {
                         let currentList = textAreaResultSuccess.val();
-                        if (currentList != "") currentList += "\n" + linkCurrent;
-                        else currentList += linkCurrent;
+                        if (currentList != "") currentList += "\n" + linkCurrent + ' ===> ' + data.msg;
+                        else currentList += linkCurrent + ' ===> ' + data.msg;
                         textAreaResultSuccess.val(currentList);
                     } else {
                         let currentList = textAreaResultError.val();
-                        if (currentList != "") currentList += "\n" + linkCurrent;
-                        else currentList += linkCurrent;
+                        if (currentList != "") currentList += "\n" + linkCurrent + ' ===> ' + data.msg;
+                        else currentList += linkCurrent + ' ===> ' + data.msg;
                         textAreaResultError.val(currentList);
                     }
                     crawl_movies();
