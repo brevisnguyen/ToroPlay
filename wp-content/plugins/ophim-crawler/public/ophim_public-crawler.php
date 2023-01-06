@@ -105,10 +105,10 @@ class OPhim_Movies_Crawler {
                 'posts_per_page' => 1,
                 'meta_query' => array(
                     array(
-                        'key' => 'field_title',
-                        'value' => $org_title,
-                        'compare' => '='
-                    )
+                        'key' => 'ophim_id',
+                        'value' => $ophim_id,
+                        'compare' => '=',
+                    ),
                 )
             );
             $wp_query = new WP_Query($args);
@@ -145,6 +145,7 @@ class OPhim_Movies_Crawler {
 						'status' => true,
 						'post_id' => $post->ID,
 						'data' => $movie_data,
+                        'msg' => 'Updated',
 					);
                     echo json_encode($result);
                     wp_die();
@@ -183,6 +184,7 @@ class OPhim_Movies_Crawler {
                 'status' => true,
                 'post_id' => $post_id,
                 'data' => $movie_data,
+                'msg' => 'Inserted',
             );
             echo json_encode($result);
             wp_die();
@@ -205,7 +207,7 @@ class OPhim_Movies_Crawler {
 	 * @param  array  $array_data   raw movie data
 	 * @param  array  $movie_data   movie data
 	 */
-    private function create_data($sourcePage)
+    private function create_data($sourcePage, $url, $ophim_id, $ophim_update_time)
     {
         $arrCat = [];
         if($sourcePage["movie"]["type"] == "single") {
@@ -264,7 +266,8 @@ class OPhim_Movies_Crawler {
             'duration'          => $sourcePage["movie"]["time"],
             'quality'           => $sourcePage["movie"]["quality"],
             'tr_post_type'      => $tr_post_type,
-            'episodes'          => $sourcePage['episodes']
+            'episodes'          => $sourcePage['episodes'],
+            'ophim_id'          => $ophim_id,
         );
     
         return $data;
@@ -345,6 +348,7 @@ class OPhim_Movies_Crawler {
             'poster_hotlink' => $data['thumbnail'],
             'backdrop_hotlink' => $data['poster'],
             'letters' => mb_strtoupper(substr(sanitize_title($data['title']), 0, 1)),
+            'ophim_id' => $data['ophim_id'],
         );
         if( isset($post_meta_movies) ) {
             foreach ( $post_meta_movies as $key => $value ) {
